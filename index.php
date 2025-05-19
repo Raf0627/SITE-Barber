@@ -11,6 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
 </head>
 
@@ -24,15 +31,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <hr>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php">Início</a>
         </li>
+        <hr>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="servicos.php">Serviços</a>
         </li>
+        <hr>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="sobre.php">Sobre</a>
         </li>
+        <hr>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="contato.php">Contato</a>
         </li>
@@ -43,14 +54,24 @@
     </header>
 
     <main>
-<div class="img-fundo"><img src="" alt="fundo barbearia"></div>
+<div class="bem-vindo"><p>Bem-vindo</p></div>
     </main>
 
     <footer>
-
+<div class="redes">
+    <div class="insta column"><i class="fa-brands fa-instagram"></i></div>
+    <div class="zap column"><i class="fa-brands fa-whatsapp"></i></div>
+    <div class="barber column"><i class="fa-solid fa-paper-plane"></i></div>
+</div>
+<p>©Todos os direitos reservados</p>
+</i>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 
 </html>
