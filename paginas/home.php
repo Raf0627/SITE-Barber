@@ -1,0 +1,1 @@
+<div class="bem-vindo"><p>Bem-vindo</p></div>

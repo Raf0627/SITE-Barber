@@ -1,5 +1,5 @@
 :root {
-    --mainColor :rgb(0, 0, 0);
+    --mainColor: rgb(0, 0, 0);
 }
 
 * {
@@ -9,12 +9,7 @@
     font-family: Poppins, Arial;
 }
 
-body {
-    min-height: 100vh;
-}
-
 header {
-
     width: 100%;
 
     hr {
@@ -22,10 +17,12 @@ header {
     }
 
     .navbar {
-        background-color:var(--mainColor) !important;
+        background-color: var(--mainColor) !important;
         position: absolute;
+        width: 100%;
+
         .navbar-brand {
-            width: 25%;
+            width: 100px;
 
             img {
                 width: 100%;
@@ -36,7 +33,6 @@ header {
             background-color: white;
 
             .navbar-toggler-icon {
-
                 color: white !important;
             }
         }
@@ -51,12 +47,14 @@ header {
 }
 
 main {
-    padding-top:30%;
+    padding-top: 10%;
+
     .img-fundo {
         img {
             width: 100%;
         }
     }
+
     .bem-vindo {
         width: 100%;
         height: 500px;
@@ -64,12 +62,30 @@ main {
         background-image: url("../imgs/barbearia.jpg");
         background-size: cover;
         background-position: center;
+
         p {
             color: white;
             font-size: 50px;
             text-align: center;
             padding: 100px;
-            background:linear-gradient(to bottom,rgba(0,0,0,1), rgba(0,0,0,0));
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        }
+    }
+}
+
+.main-servicos {
+    .card {
+        margin: 20px;
+        margin-inline: auto;
+        border-width: 10px;
+        border-color: black;
+
+        .card-body {
+            background-color: var(--mainColor);
+            color: white;
+            text-align: center;
+
+            .btn {}
         }
     }
 }
@@ -77,34 +93,61 @@ main {
 footer {
     width: 100%;
     background-color: var(--mainColor);
-    position: absolute;
     bottom: 0px;
     padding: 20px;
     padding-bottom: 0;
+
     p {
-width: 100%;
-text-align: center;
-color: white;
-margin: 0;
-padding: 40px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        margin: 0;
+        padding: 40px;
     }
+
     i {
         color: white;
     }
+
     .redes {
         display: flex;
         width: 100%;
-        margin-inline:auto;
+        margin-inline: auto;
+
         .column {
             text-align: center;
             margin-inline: auto;
+
             i {
                 color: black;
                 text-align: center;
                 background-color: white;
                 padding: 10px;
                 border-radius: 100%;
+                font-size: 30px;
+            }
+        }
+
+
+        .barber {
+            img {
+                width: 50px;
+                background-color: white;
+                border-radius: 100%;
             }
         }
     }
+}
+
+#mainHeader {
+    transition: top 0.3s;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+
+#mainHeader.hide-header {
+    top: -500px;
+    /* Esconde o header para cima */
 }
