@@ -1,6 +1,30 @@
 <div class="background"><img src="/SITE-Barber/imgs/barbearia.jpg" alt=""></div>
-<main>
-    <div class="bem-vindo"><p>Bem-vindo</p></div>
+<main class="main-home">
+    <div class="bem-vindo">
+        <p>Bem-vindo</p>
+    </div>
     <div class="gradiente"></div>
-    <div class="servicos-home"></div>
+    <div class="flex-btn">
+        <a href="galeria" class="botão-inicio">
+
+                    <i class="fa-solid fa-image"></i>
+                    <div class="subtexto"><p>Galeria</p></div>
+        </a>
+        <a href="servicos" class="botão-inicio">
+                <i class="fa-solid fa-scissors"></i>
+                <div class="subtexto"><p>Serviços</p></div>
+        </a>
+        <a href="sobre" class="botão-inicio">
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="subtexto"><p>Sobre</p></div>
+        </a>
+        <a href="contato" class="botão-inicio">
+                <i class="fa-solid fa-phone"></i>
+                <div class="subtexto"><p>Contato</p></div>
+        </a>
+    </div>
+    <div class="local">
+        <p>Localização</p>
+    </div>
+    <div class="mapa text-center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.4310879568557!2d-52.38739682302855!3d-24.05111922422072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed75634146f195%3A0x1fea41be89f87ccb!2sGolden%20Line%20Tattoo%20Shop!5e0!3m2!1spt-BR!2sbr!4v1747853498679!5m2!1spt-BR!2sbr" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 </main>
