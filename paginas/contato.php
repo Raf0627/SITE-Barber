@@ -1,14 +1,26 @@
-<div class="container mt-5 mb-5" style="max-width: 500px;">
-    <h2 class="mb-4 text-center">Fale Conosco</h2>
-    <form method="post" action="#">
-        <div class="mb-3">
-            <label for="nome" class="form-label">Nome:</label>
-            <input type="text" class="form-control" id="nome" name="nome" required>
-        </div>
-        <div class="mb-3">
-            <label for="telefone" class="form-label">Telefone:</label>
-            <input type="tel" class="form-control" id="telefone" name="telefone" required placeholder="(99) 99999-9999" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}">
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-    </form>
-</div>
+<main>
+    <div class="titulo">
+        <p>Contato</p>
+    </div>
+        <form>
+        <label for="nome">Informe seu nome:</label>
+        <br>
+        <input type="text" placeholder="Ex:Nome">
+        <br>
+        <br>
+        <label for="nome">Digite seu número:</label>
+        <br>
+        <input type="text" placeholder="">
+        <br>
+        <br>
+        <label for="servicos">Escolha o serviço:</label>
+        <select name="servicos" id="servicos">
+            <option value="cbs">Cabelo+Sobrancelha+Barba - R$90,00</option>
+            <option value="cb">Cabelo+Barba - R$80,00</option>
+            <option value="cs">Cabelo+Sobrancelha - R$60,00</option>
+            <option value="c">Cabelo - R$45,00</option>
+            <option value="b">Barba - R$40,00</option>
+            <option value="s">Sobrancelha - R$20,00</option>
+        </select>
+        </form>
+</main>

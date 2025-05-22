@@ -1,7 +1,5 @@
-<div class="background"><img src="/SITE-Barber/imgs/barbearia.jpg" alt=""></div>
 <main class="main-servicos">
-<div class="bem-vindo"><p>Serviços</p></div>
-    <div class="gradiente"></div>
+<div class="titulo"><p>Serviços</p></div>
 <div class="all-cards">
   <div class="card col-12 col-md-4" style="width: 18rem;">
     <img src="/SITE-Barber/imgs/Completo.png" class="card-img-top" alt="...">

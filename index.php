@@ -36,6 +36,10 @@
             </li>
             <hr>
             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="galeria">Galeria</a>
+            </li>
+            <hr>
+            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="servicos">Serviços</a>
             </li>
             <hr>
@@ -53,6 +57,8 @@
   </header>
 
   <main>
+    <div class="background"><img src="/SITE-Barber/imgs/barbearia.jpg" alt=""></div>
+    <div class="gradiente"></div>
     <?php
     //mostrar o GET
     //print_r($_GET)
@@ -75,6 +81,7 @@
       <div class="zap column"><i class="fa-brands fa-whatsapp"></i></div>
       <div class="barber column"><img src="/SITE-Barber/imgs/app-barber.png" alt=""></div>
     </div>
+    <p>Av. José C de Oliveira, 245b - Centro, Campo Mourão - PR, 87301-015</p>
     <p>©Todos os direitos reservados</p>
   </footer>
 

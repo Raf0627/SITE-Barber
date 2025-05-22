@@ -1,9 +1,7 @@
-<div class="background"><img src="/SITE-Barber/imgs/barbearia.jpg" alt=""></div>
 <main class="main-home">
-    <div class="bem-vindo">
+    <div class="titulo">
         <p>Bem-vindo</p>
     </div>
-    <div class="gradiente"></div>
     <div class="flex-btn">
         <a href="galeria" class="botão-inicio">
 
