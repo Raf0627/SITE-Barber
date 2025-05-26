@@ -24,7 +24,7 @@
   <header id="mainHeader">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><img src="imgs/logo.jpg" alt="logo"></a>
+        <a class="navbar-brand" href="index.php"><img src="imgs/sambarber-logo.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,7 +58,6 @@
 
   <main>
     <div class="background"><img src="/SITE-Barber/imgs/barbearia.jpg" alt=""></div>
-    <div class="gradiente"></div>
     <?php
     //mostrar o GET
     //print_r($_GET)
@@ -77,11 +76,12 @@
 
   <footer>
     <div class="redes">
-      <div class="insta column"><i class="fa-brands fa-instagram"></i></div>
-      <div class="zap column"><i class="fa-brands fa-whatsapp"></i></div>
+      <div class="insta column"><a href="https://www.instagram.com/samuelmirandasiqueira?igsh=MWM2aWE4czhndDlvbA==" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+      <div class="zap column"><a href="https://wa.me/554498264244" target="_blank" rel=""><i class="fa-brands fa-whatsapp"></i></a></div>
       <div class="barber column"><img src="/SITE-Barber/imgs/app-barber.png" alt=""></div>
     </div>
     <p>Av. José C de Oliveira, 245b - Centro, Campo Mourão - PR, 87301-015</p>
+    <div class="img-footer"><img src="imgs/sambarber-logo.png" alt=""></div>
     <p>©Todos os direitos reservados</p>
   </footer>
 

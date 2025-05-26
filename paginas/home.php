@@ -2,6 +2,7 @@
     <div class="titulo">
         <p>Bem-vindo</p>
     </div>
+    <div class="logo-bemvindo"><img src="imgs/sambarber-logo.png" alt=""></div>
     <div class="flex-btn">
         <a href="galeria" class="botão-inicio">
 
