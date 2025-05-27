@@ -57,7 +57,8 @@
   </header>
 
   <main>
-    <div class="background"><img src="/SITE-Barber/imgs/barbearia.jpg" alt=""></div>
+    <div class="background bg-desktop"><img src="/SITE-Barber/imgs/barbearia.jpg" alt=""></div>
+    <div class="background bg-mobile"><img src="/SITE-Barber/imgs/barbearia-mobile.jpg" alt=""></div>
     <?php
     //mostrar o GET
     //print_r($_GET)

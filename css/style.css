@@ -23,15 +23,16 @@ header {
     }
 
     .navbar {
-        background-color: rgb(0,0,0,0.93) !important;
+        background-color: rgb(0, 0, 0, 1) !important;
         position: absolute;
         width: 100%;
 
         .navbar-brand {
-            width: 100%;
+            width: 150px;
 
             img {
                 width: 150px;
+                padding: 20px;
             }
         }
 
@@ -54,16 +55,28 @@ header {
 
 
 .background {
-    position: absolute;
+    position: fixed;
     z-index: -2;
     width: 100%;
     top: 0;
-    filter: brightness(75%);
+    filter: brightness(60%);
 
 
     img {
         width: 100%;
-        height: 300px;
+    }
+}
+
+.bg-desktop {
+    display: none;
+}
+
+.bg-mobile {
+    display: block;
+    height: 100%;
+    img {
+        height: 100%;
+        width: 120%;
     }
 }
 
@@ -90,7 +103,6 @@ main {
         width: 100%;
         top: 200px;
         margin-top: 140px;
-        padding-bottom: 50px;
 
         p {
             color: var(--secondaryColor);
@@ -131,6 +143,7 @@ main {
             background-color: var(--mainColor);
             width: 40%;
             border-radius: 20px;
+            border: 3px solid var(--secondaryColor);
             text-align: center;
             margin: 10px;
 
@@ -155,13 +168,16 @@ main {
 
     form {
         margin: 20px;
-        padding: 20px;
+        padding: 40px;
         background-color: var(--mainColor);
         border-radius: 20px;
         text-align: center;
+        width: 400px;
+        margin-inline: auto;
+        border: 3px solid var(--secondaryColor);
 
         label {
-            color: white;
+            color: var(--secondaryColor);
         }
 
         input {
@@ -174,7 +190,15 @@ main {
             width: 100%;
             border-radius: 5px;
             padding: 10px;
-            text-align: center;
+        }
+    }
+
+    .logo-bemvindo {
+        width: 100%;
+
+        img {
+            width: 100%;
+            padding: 20px;
         }
     }
 }
@@ -194,9 +218,13 @@ main {
         .card {
             margin: 20px;
             margin-inline: auto;
-            border-width: 10px;
-            border-color: var(--mainColor);
-            box-shadow: 0px 0px 10px;
+            border-width: 5px;
+            border-color: var(--secondaryColor);
+            box-shadow: 0px 0px 10px rgb(55, 55, 55);
+            img {
+                border: 3px solid rgb(0, 0, 0);
+                border-radius: 0;
+            }
 
             .card-body {
                 background-color: var(--mainColor);
@@ -215,11 +243,12 @@ footer {
     bottom: 0px;
     padding: 20px;
     padding-bottom: 0;
-
+    border-top: 5px solid var(--secondaryColor);
     .img-footer {
         width: 100%;
         display: flex;
         justify-content: center;
+
         img {
             width: 100px;
         }
@@ -283,15 +312,17 @@ footer {
 @media(min-width:992px) {
     header {
         .navbar {
-        padding-left: 120px;
-        padding-right: 50px;
+            padding-left: 120px;
+            padding-right: 50px;
+
             .navbar-nav {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        .nav-item {
-            margin-inline: 40px;
-        }
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                .nav-item {
+                    margin-inline: 40px;
+                }
             }
         }
     }
@@ -302,21 +333,35 @@ footer {
         }
     }
 
+    .bg-desktop {
+        display: block;
+
+    }
+
+    .bg-mobile {
+        display: none;
+    }
+
     main {
         .mapa {
             padding-inline: 100px;
-            iframe {
-            }
+
+            iframe {}
         }
+
         .flex-btn {
             .botão-inicio {
                 width: 30%;
                 padding: 75px;
                 margin: 30px;
-                i {
-                    
-                }
+
+                i {}
             }
+        }
+
+        form {
+            margin-inline: auto;
+            width: 600px;
         }
     }
 
@@ -325,6 +370,7 @@ footer {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+
             .card {
                 margin: 25px;
             }
