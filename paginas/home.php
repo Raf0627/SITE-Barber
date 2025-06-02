@@ -4,20 +4,20 @@
     </div>
     <div class="logo-bemvindo"><img src="imgs/sambarber-logo.png" alt=""  data-aos="zoom-in"></div>
     <div class="flex-btn"  data-aos="zoom-in">
-        <a href="galeria" class="botão-inicio">
+        <a href="galeria" class="botão-inicio" title="galeria">
 
                     <i class="fa-solid fa-image"></i>
                     <div class="subtexto"><p>Galeria</p></div>
         </a>
-        <a href="servicos" class="botão-inicio">
+        <a href="servicos" class="botão-inicio" title="serviços">
                 <i class="fa-solid fa-scissors"></i>
                 <div class="subtexto"><p>Serviços</p></div>
         </a>
-        <a href="sobre" class="botão-inicio">
+        <a href="sobre" class="botão-inicio" title="sobre">
                 <i class="fa-solid fa-circle-info"></i>
                 <div class="subtexto"><p>Sobre</p></div>
         </a>
-        <a href="contato" class="botão-inicio">
+        <a href="contato" class="botão-inicio" title="contato">
                 <i class="fa-solid fa-phone"></i>
                 <div class="subtexto"><p>Contato</p></div>
         </a>
