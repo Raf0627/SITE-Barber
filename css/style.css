@@ -27,10 +27,12 @@ header {
         position: absolute;
         width: 100%;
         padding-inline: 0px !important;
+
         .navbar-brand {
             width: 150px;
 
-                margin-left:10%;
+            margin-left: 10%;
+
             img {
                 width: 100%;
                 padding: 10px;
@@ -54,7 +56,7 @@ header {
             transition:
                 color 0.2s,
                 transform 0.2s;
-                padding: 0 !important;
+            padding: 0 !important;
         }
 
         .nav-link:hover,
@@ -105,6 +107,7 @@ header {
 main {
     padding-top: 15px;
     padding-bottom: 40px;
+
     .img-fundo {
         img {
             width: 100%;
@@ -211,6 +214,7 @@ main {
 
 .main-servicos {
     padding-bottom: 10px;
+
     .all-cards {
 
         .card {
@@ -293,7 +297,9 @@ main {
             margin: 0;
             padding: 10px;
 
-            .parsley-required, .parsley-type, .parsley-minlength {
+            .parsley-required,
+            .parsley-type,
+            .parsley-minlength {
                 color: red;
                 text-decoration: none !important;
                 list-style: none;
@@ -309,6 +315,7 @@ footer {
     padding: 20px;
     padding-bottom: 0;
     border-top: 3px solid var(--secondaryColor);
+
     .img-footer {
         width: 100%;
         display: flex;
@@ -462,6 +469,42 @@ footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+            }
+        }
+
+        .formas-contato {
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            .opcao-ou {
+                color: white;
+                width: 100%;
+
+                p {
+                    color: var(--secondaryColor);
+                    font-size: 50px;
+                    text-align: center;
+                    text-shadow: 0 0 5px var(--mainColor);
+                    font-weight: bold;
+                }
+            }
+
+            .opcao-2-desktop {
+                display: block;
+                width: 100%;
+
+                img {
+                    width: 50%;
+                    border-radius: 20px;
+                    border: 3px white solid;
+                }
+            }
+
+            .opcao-2-mobile {
+                display: none;
             }
         }
     }
