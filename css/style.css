@@ -23,7 +23,7 @@ header {
     }
 
     .navbar {
-        background-color: rgb(0, 0, 0, 1) !important;
+        background-color: var(--mainColor) !important;
         position: absolute;
         width: 100%;
         padding-inline: 0px !important;
@@ -57,6 +57,7 @@ header {
                 color 0.2s,
                 transform 0.2s;
             padding: 0 !important;
+            margin-block: 10px;
         }
 
         .nav-link:hover,
@@ -236,6 +237,10 @@ main {
                 color: var(--secondaryColor);
                 text-align: center;
 
+                .card-title {
+                    height: 50px;
+                }
+
                 .btn {}
             }
         }
@@ -246,9 +251,18 @@ main {
 
 .main-contato {
 
+    .titulo-contato {
+        padding-bottom: 20px;
+    }
+
+    .opcao-1 {
+        background-color: rgb(32, 32, 32);
+    }
 
     form {
         padding: 40px;
+        padding-bottom: 10px;
+        padding-top: 20px;
         background-color: var(--mainColor);
         border-radius: 20px;
         text-align: center;
@@ -256,11 +270,47 @@ main {
         margin-inline: auto;
         border: 3px solid var(--secondaryColor);
 
+        .formulario {
+                width: 100%;
+                background-color: rgb(16, 16, 16);
+                padding: 20px;
+                border-radius: 10px;
+                }
+
+        .opcao-2-desktop,
+        .opcao-2-mobile {
+            width: 45%;
+
+            img {
+                margin-top: 50px;
+                width: 100%;
+                border-radius: 10px;
+                border: 3px white solid;
+            }
+        }
+
+        .opcao-2-mobile {
+            display: block;
+        }
+
+        .opcao-2-desktop {
+            display: none;
+        }
+
+        p {
+            color: var(--secondaryColor);
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 0 0 5px var(--mainColor);
+        }
+
         label {
             color: var(--secondaryColor);
+            margin-bottom: 5px;
         }
 
         input {
+            margin-bottom: 20px;
             width: 100%;
             border-radius: 5px;
             padding: 10px;
@@ -271,23 +321,40 @@ main {
             border-radius: 5px;
             padding: 10px;
             cursor: pointer;
+            margin-bottom: 20px;
 
         }
 
+        .alternativa input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+
         .alternativa {
-            margin-inline: 30px;
             cursor: pointer;
+            margin: 20px;
+            margin-bottom: 0;
 
             input {
                 cursor: pointer;
             }
         }
 
+        .opcoes {
+            width: 100%;
+            background-color: rgb(40, 40, 40);
+            border-radius: 10px;
+            margin-block: 20px;
+        }
+
         button {
             padding: 10px 20px !important;
+            margin-block: 20px;
+            font-size: 20px;
+            width: 100%;
 
             img {
-                width: 40px;
+                width: 50px;
                 margin-left: 5px;
             }
         }
@@ -306,6 +373,7 @@ main {
             }
         }
     }
+
 }
 
 footer {
@@ -340,20 +408,29 @@ footer {
 
     .redes {
         display: flex;
-        width: 100%;
+        width: 300px;
+        justify-content: space-evenly;
         margin-inline: auto;
 
         .column {
             text-align: center;
-            margin-inline: auto;
 
             i {
                 color: var(--mainColor);
                 text-align: center;
                 background-color: var(--secondaryColor);
-                padding: 10px;
+                padding: 10px 12px;
                 border-radius: 100%;
                 font-size: 30px;
+            }
+
+            a:hover,
+            a:focus {
+
+                i,
+                img {
+                    background-color: grey;
+                }
             }
         }
 
@@ -451,67 +528,86 @@ footer {
 
         form {
             margin-inline: auto;
-            width: 600px;
-
-            .pergunta {
-                padding-top: 10px;
-            }
-
-            .alternativa {
-                margin-left: 60px;
-                margin-right: 0;
-            }
-
-
-            .opcoes {
-                width: 95%;
-                margin-inline: auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-
-        .formas-contato {
-
+            width: 90%;
+            padding-top: 40px;
+            padding-bottom: 30px;
             display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-
-            .opcao-ou {
-                color: white;
-                width: 100%;
-
-                p {
-                    color: var(--secondaryColor);
-                    font-size: 50px;
-                    text-align: center;
-                    text-shadow: 0 0 5px var(--mainColor);
-                    font-weight: bold;
-                }
-            }
-
-            .opcao-2-desktop {
-                display: block;
-                width: 100%;
-
-                img {
-                    width: 50%;
-                    border-radius: 20px;
-                    border: 3px white solid;
-                }
-            }
+            justify-content: space-between;
 
             .opcao-2-mobile {
                 display: none;
             }
+
+            .opcao-2-desktop {
+                display: block;
+            }
+
+            .formulario {
+                width: 50%;
+                background-color: rgb(16, 16, 16);
+                padding: 20px;
+                border-radius: 10px;
+                .nome-tel {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .class-nome,
+                    .class-tel {
+                        width: 47%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+
+
+                .pergunta {}
+
+                .alternativa {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    input {
+
+                        margin: 0px;
+                    }
+                }
+
+
+                .opcoes {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px;
+                }
+
+
+                .service-period {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    .service {
+                        width: 74%;
+                    }
+
+                    .period {
+                        width: 20%;
+
+                        select {
+                            text-align: center;
+                        }
+
+                    }
+                }
+            }
         }
     }
 
-    footer {
-        .redes {
-            width: 50%;
-        }
-    }
+    footer {}
 }

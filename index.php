@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samuel Miranda</title>
-  <link rel="icon" href="/SITE-Barber/imgs/sambarber-logo.png" />
+  <title>Sam Barber</title>
+  <link rel="icon" href="imgs/sambarber-logo.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,10 +60,10 @@
 
   <main>
     <div class="background bg-desktop">
-      <img src="/SITE-Barber/imgs/barbearia.jpg" alt="barbearia-fundo">
+      <img src="imgs/barbearia.jpg" alt="barbearia-fundo">
     </div>
     <div class="background bg-mobile">
-      <img src="/SITE-Barber/imgs/barbearia-mobile.jpg" alt="barbearia-fundo-mobile">
+      <img src="imgs/barbearia-mobile.jpg" alt="barbearia-fundo-mobile">
     </div>
     <?php
     //mostrar o GET
@@ -95,7 +95,7 @@
       </div>
       <div class="barber column">
         <a href="https://sites.appbarber.com.br/pt-br/goldenline" target="_blank" title="Agendar pelo AppBarber">
-          <img src="/SITE-Barber/imgs/app-barber.png" alt="Logo AppBarber">
+          <img src="imgs/app-barber.png" alt="Logo AppBarber">
         </a>
       </div>
     </div>
