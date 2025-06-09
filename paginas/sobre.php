@@ -1,5 +1,5 @@
 <main class="main-sobre">
     <div class="titulo" data-aos="zoom-in">
-            <p>Sobre</p>
+            <h1>Sobre</h1>
         </div>
 </main>

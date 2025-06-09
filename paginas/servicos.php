@@ -1,15 +1,15 @@
 <main class="main-servicos">
   <div class="titulo" data-aos="zoom-in">
-    <p>Serviços</p>
+    <h1>Serviços</h1>
   </div>
   <div class="all-cards">
     <?php
     include "array.php";
     // Mapeamento para o parâmetro de serviço na URL
     $servicoParams = [
-      "Cabelo+Barba+Sobrancelha" => "cbs",
-      "Cabelo+Barba" => "cb",
-      "Cabelo+Sobrancelha" => "cs",
+      "Cabelo + Barba + Sobrancelha" => "cbs",
+      "Cabelo + Barba" => "cb",
+      "Cabelo + Sobrancelha" => "cs",
       "Cabelo" => "c",
       "Barba" => "b",
       "Sobrancelha" => "s"
@@ -21,7 +21,7 @@
       $param = isset($servicoParams[$nome]) ? $servicoParams[$nome] : "";
       echo "
         <div class='card col-12 col-md-4' style='width: 18rem;' data-aos='zoom-in'>
-          <img src='/SITE-Barber/{$foto}' class='card-img-top' alt='ícone de cortes'>
+          <img src='{$foto}' class='card-img-top' alt='ícone de cortes'>
           <div class='card-body'>
             <br>
             <h5 class='card-title'>{$nome}</h5>

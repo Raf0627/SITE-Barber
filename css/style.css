@@ -31,7 +31,7 @@ header {
         .navbar-brand {
             width: 150px;
 
-            margin-left: 10%;
+            margin-left: 20px;
 
             img {
                 width: 100%;
@@ -74,7 +74,7 @@ header {
     z-index: -2;
     width: 100%;
     top: 0;
-    filter: brightness(60%);
+    filter: brightness(70%);
 
 
     img {
@@ -97,16 +97,15 @@ header {
 }
 
 .gradiente {
+        background-color: rgb(0, 0, 0,0.4);
     position: absolute;
     z-index: -1;
     width: 100%;
-    padding: 70px;
-    padding-block: 130px;
-    top: 0px;
+    height: 600px;
 }
 
 main {
-    padding-top: 15px;
+    padding-top: 90px;
     padding-bottom: 40px;
 
     .img-fundo {
@@ -118,10 +117,8 @@ main {
 
     .titulo {
         width: 100%;
-        top: 200px;
-        margin-top: 140px;
-
-        p {
+        margin-bottom: 50px;
+        h1 {
             color: var(--secondaryColor);
             font-size: 50px;
             text-align: center;
@@ -134,9 +131,20 @@ main {
 
 .main-home {
 
+    .titulo-home {
+
+    }
+
+    p {
+        color: var(--secondaryColor);
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 0 0 5px var(--mainColor);
+    }
 
     .local {
         padding-top: 100px;
+        padding-bottom: 20px;
 
         p {
             color: var(--secondaryColor);
@@ -146,45 +154,6 @@ main {
             font-weight: bold;
             margin-bottom: 0;
             padding-bottom: 0;
-        }
-    }
-
-    .flex-btn {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 100%;
-
-        .botão-inicio:hover {
-            background-color: var(--terciaryColor);
-        }
-
-        .botão-inicio {
-            text-decoration: none;
-            padding: 20px;
-            background-color: var(--mainColor);
-            width: 40%;
-            border-radius: 20px;
-            border: 3px solid var(--secondaryColor);
-            text-align: center;
-            margin: 10px;
-
-            i {
-                font-size: 75px;
-                color: var(--secondaryColor);
-            }
-
-            .subtexto {
-                padding: 10px;
-                padding-bottom: 0;
-                font-size: 20px;
-
-                p {
-                    color: var(--secondaryColor);
-
-                    margin-bottom: 0;
-                }
-            }
         }
     }
 
@@ -260,26 +229,26 @@ main {
     }
 
     form {
-        padding: 40px;
+        padding: 20px;
         padding-bottom: 10px;
         padding-top: 20px;
         background-color: var(--mainColor);
         border-radius: 20px;
         text-align: center;
-        width: 375px;
+        width: 90%;
         margin-inline: auto;
         border: 3px solid var(--secondaryColor);
 
         .formulario {
-                width: 100%;
-                background-color: rgb(16, 16, 16);
-                padding: 20px;
-                border-radius: 10px;
-                }
+            width: 100%;
+            background-color: rgb(26, 26, 26);
+            padding: 20px;
+            border-radius: 10px;
+        }
 
         .opcao-2-desktop,
         .opcao-2-mobile {
-            width: 45%;
+            width: 100%;
 
             img {
                 margin-top: 50px;
@@ -363,6 +332,7 @@ main {
             text-align: center;
             margin: 0;
             padding: 10px;
+            margin-top: -30px !important;
 
             .parsley-required,
             .parsley-type,
@@ -461,19 +431,22 @@ footer {
 @media(min-width:992px) {
     header {
         .navbar {
-            padding-left: 100px;
-            padding-right: 50px;
+            .navbar-brand {
+            margin-left: 90px;
+            }
+            .container-fluid {
+                margin-right: 50px;
+                .navbar-nav {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
 
-            .navbar-nav {
-                width: 100%;
-                display: flex;
-                justify-content: flex-end;
-
-                .nav-item {
-                    margin-inline: 40px;
+                    .nav-item {
+                        margin-inline: 40px;
+                    }
                 }
             }
-        }
+    }
     }
 
     .background {
@@ -502,8 +475,6 @@ footer {
             iframe {
                 width: 70%;
             }
-
-            padding: 30px;
         }
     }
 
@@ -540,13 +511,14 @@ footer {
 
             .opcao-2-desktop {
                 display: block;
+                width: 49%;
             }
 
             .formulario {
-                width: 50%;
-                background-color: rgb(16, 16, 16);
+                width: 49%;
                 padding: 20px;
                 border-radius: 10px;
+
                 .nome-tel {
                     width: 100%;
                     display: flex;
@@ -609,5 +581,9 @@ footer {
         }
     }
 
-    footer {}
+    footer {
+        .redes {
+            width: 600px;
+        }
+    }
 }

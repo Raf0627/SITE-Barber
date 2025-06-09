@@ -1,7 +1,7 @@
 <main class="main-contato">
     <div class="formas-contato">
             <div class="titulo titulo-contato" data-aos="zoom-in">
-                <p>Contato</p>
+                <h1>Contato</h1>
             </div>
             <form data-aos="zoom-in" data-parsley-validate>
                 <div class="formulario">
@@ -57,10 +57,11 @@
                 </div>
                 <div class="opcao-2-desktop">
                     <p>Opção 2</p>
-                    <a href="https://sites.appbarber.com.br/pt-br/goldenline" target="_blank"><img src=".\imgs\opcao-2-desktop.jpg" alt=""></a>
+                    <a href="https://sites.appbarber.com.br/pt-br/goldenline" target="_blank"><img src=".\imgs\ad-gpt.png" alt=""></a>
                 </div>
         <div class="opcao-2-mobile">
-            <a href="https://sites.appbarber.com.br/pt-br/goldenline"><img src=".\imgs\ad-mobile.jpg" alt=""></a>
+            <p>Opção 2</p>
+            <a href="https://sites.appbarber.com.br/pt-br/goldenline"><img src=".\imgs\ad-gpt.png" alt=""></a>
         </div>
             </form>
         

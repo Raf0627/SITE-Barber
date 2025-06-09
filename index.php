@@ -38,15 +38,15 @@
             </li>
             <hr>
             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="sobre" title="sobre">Sobre</a>
+            </li>
+            <hr>
+            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="galeria" title="galeria">Galeria</a>
             </li>
             <hr>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="servicos" title="serviços">Serviços</a>
-            </li>
-            <hr>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="sobre" title="sobre">Sobre</a>
             </li>
             <hr>
             <li class="nav-item">
@@ -58,13 +58,14 @@
     </nav>
   </header>
 
+  <div class="background bg-desktop">
+    <img src="imgs/barbearia.jpg" alt="barbearia-fundo">
+  </div>
+  <div class="background bg-mobile">
+    <img src="imgs/barbearia-mobile.jpg" alt="barbearia-fundo-mobile">
+  </div>
+  <div class="gradiente"></div>
   <main>
-    <div class="background bg-desktop">
-      <img src="imgs/barbearia.jpg" alt="barbearia-fundo">
-    </div>
-    <div class="background bg-mobile">
-      <img src="imgs/barbearia-mobile.jpg" alt="barbearia-fundo-mobile">
-    </div>
     <?php
     //mostrar o GET
     //print_r($_GET)
