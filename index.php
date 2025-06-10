@@ -1,3 +1,9 @@
+<?php
+
+  $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,6 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Barber</title>
+  <base href="http://<?=$base?>">
   <link rel="icon" href="imgs/sambarber-logo.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -64,7 +71,6 @@
   <div class="background bg-mobile">
     <img src="imgs/barbearia-mobile.jpg" alt="barbearia-fundo-mobile">
   </div>
-  <div class="gradiente"></div>
   <main>
     <?php
     //mostrar o GET

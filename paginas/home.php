@@ -1,16 +1,45 @@
 <main class="main-home">
+    <div class="gradiente"></div>
     <div class="titulo titulo-home" data-aos="zoom-in">
         <h1>Bem-vindo ao meu site!</h1>
         <p>Cortes de cabelo profissionais e um ótimo papo são minhas especialidades. </p>
         <div class="logo-bemvindo"><img src="imgs/sambarber-logo.png" alt=""></div>
     </div>
 
-    <div class="galeria-home">
-        <p>Sou barbeiro profissional há x anos e atualmente estou na Golden Line Barbershop</p>
-        <img src="imgs/samuca.jpg" alt="">
+    <div class="sobre-home" data-aos="fade-up">
+        <div class="sobre-texto">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou barbeiro profissional, apaixonado por transformar visuais e proporcionar uma experiência única para cada cliente. Clique abaixo para conhecer minha história e trajetória!
+            </p>
+            <a href="sobre" class="btn-sobre">Saiba mais</a>
+        </div>
+        <img src="imgs/samuca.jpg" alt="Samuel Miranda">
     </div>
 
-    <div  data-aos="zoom-in">
+    <div class="galeria-home">
+        <div class="columns">
+            <div class="column column-1">
+                <div class="img img-1"><img src="imgs/barbearia.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/barbearia-mobile.jpg" alt=""></div>
+            </div>
+            <div class="column column-2">
+                <div class="img img-2"><img src="imgs/barbearia-mobile.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/barbearia.jpg" alt=""></div>
+            </div>
+            <div class="column column-3">
+                <div class="img img-1"><img src="imgs/barbearia.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/barbearia-mobile.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="btn-galeria text-center"><a href="galeria">Ver galeria</a></div>
+    </div>
+
+    <div class="servicos-home"></div>
+
+    <div class="contao-home"></div>
+
+    <div data-aos="zoom-in">
         <div class="local">
             <p>Localização</p>
         </div>
