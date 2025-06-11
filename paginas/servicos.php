@@ -26,7 +26,7 @@
             <br>
             <h5 class='card-title'>{$nome}</h5>
             <p class='card-text'>{$valor}</p>
-            <a href='contato?servico={$param}' class='btn btn-primary agendar-btn' data-servico='{$param}' title='Agendar'>Agendar</a>
+            <a href='contato?servico={$param}' class='btn agendar-btn' data-servico='{$param}' title='Agendar'>Agendar</a>
           </div>
         </div>
         ";

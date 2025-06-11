@@ -23,7 +23,7 @@ header {
     }
 
     .navbar {
-        background-color: var(--mainColor) !important;
+        background-color: rgb(0, 0, 0, 0.92) !important;
         position: absolute;
         width: 100%;
         padding-inline: 0px !important;
@@ -60,9 +60,8 @@ header {
             margin-block: 10px;
         }
 
-        .nav-link:hover,
-        .nav-link:focus {
-            color: rgb(174, 174, 174) !important;
+        .nav-link:hover {
+            color: orange !important;
             transform: scale(1.15);
         }
     }
@@ -73,7 +72,7 @@ header {
     z-index: -2;
     width: 100%;
     top: 0;
-    filter: brightness(70%);
+    filter: brightness(100%);
 
 
     img {
@@ -94,6 +93,8 @@ header {
         width: 120%;
     }
 }
+
+
 
 main {
     padding-top: 90px;
@@ -121,17 +122,38 @@ main {
 }
 
 
+.gradiente {
+    background: linear-gradient(to bottom, black 2%   , rgb(0, 0, 0, 0));
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 1500px;
+    margin-top: -200px;
+}
 .main-home {
-    .gradiente {
-        background: linear-gradient(to bottom, black, rgb(0, 0, 0, 0));
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 650px;
-        margin-top: -200px;
-    }
 
-    .titulo-home {}
+    .titulo-home {
+        padding-bottom: 75px;
+
+        .btn-agendar {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            a {background: orange;
+                color: var(--mainColor);
+                padding: 12px 32px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;}
+                a:hover{
+                background: var(--secondaryColor);
+                color: orange;
+                transform: scale(1.05);
+            }
+        }
+        
+    }
 
     .sobre-home {
         display: flex;
@@ -175,8 +197,7 @@ main {
                 font-weight: bold;
             }
 
-            .btn-sobre:hover,
-            .btn-sobre:focus {
+            .btn-sobre:hover{
                 background: var(--secondaryColor);
                 color: orange;
                 transform: scale(1.05);
@@ -197,41 +218,50 @@ main {
         justify-content: space-around;
         flex-wrap: wrap;
 
-        .btn-galeria {
-            width: 100%;
-            padding: 20px;
-
-            a {
-                color: var(--secondaryColor);
-                background-color: var(--mainColor);
-                text-decoration: none;
-                font-size: 30px;
-                padding: 20px;
-                border-radius: 3px;
-            }
-
-            a:hover {
-                color: var(--mainColor);
-                background-color: orange;
-            }
-        }
-
         .columns {
             display: flex;
             justify-content: space-evenly;
             width: 80%;
-
             .column {
                 width: 33%;
 
                 .img {
-                    padding: 10px;
+                    padding: 3px 1.5px;
 
                     img {
                         width: 100%;
                     }
                 }
             }
+        }
+        .columns:hover {
+            filter: brightness(10%);
+            .ver-galeria {
+                display: block;
+                filter: brightness(100%);
+            }
+        }
+
+        .ver-galeria {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 425px;
+            display: none;
+            a {
+                text-decoration: none;
+                width: 100px;
+                p {
+                font-size: 35px;
+                color: orange;
+            }}
+            a:hover {
+                p {
+                    color: var(--secondaryColor);
+                }
+            }
+
         }
     }
 
@@ -242,10 +272,16 @@ main {
         text-shadow: 0 0 5px var(--mainColor);
     }
 
-    .local {
+    .servicos-home {
+        
+    }
+
+    .local-container{
+        background-color: rgb(0, 0, 0, 0.8);
+        
+        .local {
         padding-top: 100px;
         padding-bottom: 20px;
-
         p {
             color: var(--secondaryColor);
             text-shadow: 0 0 10px var(--mainColor);
@@ -265,7 +301,7 @@ main {
             border-radius: 5px;
             height: 400px;
         }
-    }
+    }}
 
     .logo-bemvindo {
         width: 100%;
@@ -305,16 +341,26 @@ main {
                 background-color: var(--mainColor);
                 color: var(--secondaryColor);
                 text-align: center;
-
+                padding-top: 0px !important;
                 .card-title {
                     height: 50px;
                 }
 
-                .btn {}
+                .btn {
+                background: orange;
+                color: var(--mainColor);
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;}
+                .btn:hover{
+                background: var(--secondaryColor);
+                color: orange;
+                transform: scale(1.05);
+            }
+                }
             }
         }
     }
-}
 
 .main-sobre {}
 
@@ -498,14 +544,11 @@ footer {
                 font-size: 30px;
             }
 
-            a:hover,
-            a:focus {
-
-                i,
-                img {
-                    background-color: grey;
-                }
-            }
+            a:hover {
+                i , img{background: var(--secondaryColor);
+                color: orange;
+                transform: scale(1.05);
+            }}
         }
 
 

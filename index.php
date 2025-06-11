@@ -1,6 +1,6 @@
 <?php
 
-  $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
+$base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
 
 ?>
 
@@ -11,7 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Barber</title>
-  <base href="http://<?=$base?>">
+  <base href="http://<?= $base ?>">
   <link rel="icon" href="imgs/sambarber-logo.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,6 +24,8 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 </head>
 
@@ -71,6 +73,7 @@
   <div class="background bg-mobile">
     <img src="imgs/barbearia-mobile.jpg" alt="barbearia-fundo-mobile">
   </div>
+  <div class="gradiente"></div>
   <main>
     <?php
     //mostrar o GET
@@ -117,7 +120,6 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
-      once: true,
     });
   </script>
   <script>
@@ -140,9 +142,29 @@
   <script src="js/parsley.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function() {
       $(".tel").mask("(00) 00000-0000");
+    })
+  </script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout:1000,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 6
+        }
+      }
     })
   </script>
 </body>

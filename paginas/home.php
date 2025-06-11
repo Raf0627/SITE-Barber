@@ -1,9 +1,10 @@
 <main class="main-home">
-    <div class="gradiente"></div>
+    
     <div class="titulo titulo-home" data-aos="zoom-in">
         <h1>Bem-vindo ao meu site!</h1>
         <p>Cortes de cabelo profissionais e um ótimo papo são minhas especialidades. </p>
         <div class="logo-bemvindo"><img src="imgs/sambarber-logo.png" alt=""></div>
+        <div class="btn-agendar text-center"><a href="servicos">Agende seu horário</a></div>
     </div>
 
     <div class="sobre-home" data-aos="fade-up">
@@ -20,29 +21,39 @@
     <div class="galeria-home">
         <div class="columns">
             <div class="column column-1">
-                <div class="img img-1"><img src="imgs/barbearia.jpg" alt=""></div>
-                <div class="img img-2"><img src="imgs/barbearia-mobile.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/1.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/2.jpg" alt=""></div>
             </div>
             <div class="column column-2">
-                <div class="img img-2"><img src="imgs/barbearia-mobile.jpg" alt=""></div>
-                <div class="img img-1"><img src="imgs/barbearia.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/3.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/4.jpg" alt=""></div>
             </div>
             <div class="column column-3">
-                <div class="img img-1"><img src="imgs/barbearia.jpg" alt=""></div>
-                <div class="img img-2"><img src="imgs/barbearia-mobile.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/5.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/6.jpg" alt=""></div>
             </div>
+            <div class="ver-galeria"><a href="galeria"><p>Ver Galeria ›</p></a></div>
         </div>
-        <div class="btn-galeria text-center"><a href="galeria">Ver galeria</a></div>
     </div>
 
-    <div class="servicos-home"></div>
+    <div class="servicos-home">
+        <div class="owl-carousel owl-theme">
+    <div class="item"><img src="imgs/full.png" alt=""></div>
+    <div class="item"><img src="imgs/cabeloBarba.png" alt=""></div>
+    <div class="item"><img src="imgs/cabeloSobrancelha.png" alt=""></div>
+    <div class="item"><img src="imgs/cabelo.png" alt=""></div>
+    <div class="item"><img src="imgs/barba.png" alt=""></div>
+    <div class="item"><img src="imgs/sobrancelha.png" alt=""></div>
+</div>
+    </div>
 
     <div class="contao-home"></div>
 
-    <div data-aos="zoom-in">
+    <div class="local-container" data-aos="zoom-in">
         <div class="local">
             <p>Localização</p>
         </div>
         <div class="mapa text-center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.4310879568557!2d-52.38739682302855!3d-24.05111922422072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed75634146f195%3A0x1fea41be89f87ccb!2sGolden%20Line%20Tattoo%20Shop!5e0!3m2!1spt-BR!2sbr!4v1747853498679!5m2!1spt-BR!2sbr" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
 </main>
+
