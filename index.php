@@ -12,7 +12,7 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Barber</title>
   <base href="http://<?= $base ?>">
-  <link rel="icon" href="imgs/sambarber-logo.png" />
+  <link rel="icon" href="imgs/sam-barber-min.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -143,30 +143,38 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/sweetalert2.all.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/fslightbox.js"></script>
   <script>
     $(document).ready(function() {
       $(".tel").mask("(00) 00000-0000");
     })
   </script>
   <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout:1000,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 6
-        }
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 0, // sem intervalo fixo
+    autoplaySpeed: 3000, // velocidade da animação (mais alto = mais suave)
+    autoplayHoverPause: false,
+    smartSpeed: 3000, // suaviza a transição
+    slideTransition: 'linear', // transição contínua
+    items: 6, // quantidade de imagens visíveis
+    responsive: {
+      0: {
+        items: 2
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
       }
-    })
-  </script>
+    }
+  });
+});
+</script>
 </body>
 
 </html>

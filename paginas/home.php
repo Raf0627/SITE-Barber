@@ -26,25 +26,14 @@
             </div>
             <div class="column column-2">
                 <div class="img img-2"><img src="imgs/3.jpg" alt=""></div>
-                <div class="img img-1"><img src="imgs/4.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/15.jpg" alt=""></div>
             </div>
             <div class="column column-3">
-                <div class="img img-1"><img src="imgs/5.jpg" alt=""></div>
-                <div class="img img-2"><img src="imgs/6.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/17.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/18.jpg" alt=""></div>
             </div>
             <div class="ver-galeria"><a href="galeria"><p>Ver Galeria ›</p></a></div>
         </div>
-    </div>
-
-    <div class="servicos-home">
-        <div class="owl-carousel owl-theme">
-    <div class="item"><img src="imgs/full.png" alt=""></div>
-    <div class="item"><img src="imgs/cabeloBarba.png" alt=""></div>
-    <div class="item"><img src="imgs/cabeloSobrancelha.png" alt=""></div>
-    <div class="item"><img src="imgs/cabelo.png" alt=""></div>
-    <div class="item"><img src="imgs/barba.png" alt=""></div>
-    <div class="item"><img src="imgs/sobrancelha.png" alt=""></div>
-</div>
     </div>
 
     <div class="contao-home"></div>

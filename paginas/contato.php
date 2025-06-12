@@ -52,7 +52,7 @@
                         <label class="alternativa"><input type="radio" name="opcao" value="S" checked>Sim</label>
                         <label class="alternativa"><input type="radio" name="opcao" value="N">Não</label>
                     </div>
-                    <button type="" id="btn-whatsapp" class="btn btn-success btn-lg">Enviar <img
+                    <button type="" id="btn-whatsapp" class="btn btn-lg">Enviar <img
                     src="imgs/whatsapp.png" alt=""></button>
                 </div>
                 <div class="opcao-2-desktop">
