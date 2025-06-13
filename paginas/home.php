@@ -32,8 +32,8 @@
                 <div class="img img-1"><img src="imgs/17.jpg" alt=""></div>
                 <div class="img img-2"><img src="imgs/18.jpg" alt=""></div>
             </div>
-            <div class="ver-galeria"><a href="galeria"><p>Ver Galeria ›</p></a></div>
         </div>
+        <div class="ver-galeria"><a href="galeria">Ver Galeria</a></div>
     </div>
 
     <div class="contao-home"></div>

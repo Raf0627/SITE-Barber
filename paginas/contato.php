@@ -40,20 +40,21 @@
                             <label for="periodo">Período:</label>
                             <select name="periodo" id="periodo" required required
                             data-parsley-required-message="Selecione um período!">
-                            <option class="opcao-n" value=" " disabled selected>Opções:</option>
+                            <option class="opcao-n" value=" " disabled selected>Selecione uma opção:</option>
                             <option value="m">Manhã</option>
                             <option value="t">Tarde</option>
                             <option value="n">Noite</option>
                         </select>
                     </div>
                 </div>
-                    <div class="opcoes">
-                        <label for="conversa" class="pergunta">Quer conversar durante o serviço?</label>
-                        <label class="alternativa"><input type="radio" name="opcao" value="S" checked>Sim</label>
-                        <label class="alternativa"><input type="radio" name="opcao" value="N">Não</label>
+                    <div class="opcoes-pai">
+                        <div class="opcoes">
+                            <label for="conversa" class="pergunta">Quer conversar durante o serviço?</label>
+                            <label class="alternativa"><input type="radio" name="opcao" value="S" checked>Sim</label>
+                            <label class="alternativa"><input type="radio" name="opcao" value="N">Não</label>
+                        </div>
                     </div>
-                    <button type="" id="btn-whatsapp" class="btn btn-lg">Enviar <img
-                    src="imgs/whatsapp.png" alt=""></button>
+                    <button type="" id="btn-whatsapp" class="btn btn-lg">Enviar <i class="fa-brands fa-whatsapp" aria-label="WhatsApp"></i></button>
                 </div>
                 <div class="opcao-2-desktop">
                     <p>Opção 2</p>

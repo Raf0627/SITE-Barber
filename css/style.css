@@ -123,13 +123,14 @@ main {
 
 
 .gradiente {
-    background: linear-gradient(to bottom, black 2%   , rgb(0, 0, 0, 0));
+    background: linear-gradient(to bottom, black 2%, rgb(0, 0, 0, 0));
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 1500px;
     margin-top: -200px;
 }
+
 .main-home {
 
     .titulo-home {
@@ -139,20 +140,24 @@ main {
             display: flex;
             width: 100%;
             justify-content: center;
-            a {background: orange;
+
+            a {
+                background: orange;
                 color: var(--mainColor);
                 padding: 12px 32px;
                 border-radius: 5px;
                 text-decoration: none;
                 font-size: 20px;
-                font-weight: bold;}
-                a:hover{
+                font-weight: bold;
+            }
+
+            a:hover {
                 background: var(--secondaryColor);
                 color: orange;
                 transform: scale(1.05);
             }
         }
-        
+
     }
 
     .sobre-home {
@@ -197,7 +202,7 @@ main {
                 font-weight: bold;
             }
 
-            .btn-sobre:hover{
+            .btn-sobre:hover {
                 background: var(--secondaryColor);
                 color: orange;
                 transform: scale(1.05);
@@ -222,6 +227,7 @@ main {
             display: flex;
             justify-content: space-evenly;
             width: 80%;
+            padding-top: 30px;
             .column {
                 width: 33%;
 
@@ -234,36 +240,31 @@ main {
                 }
             }
         }
-        .columns:hover {
-            filter: brightness(10%);
-            .ver-galeria {
-                display: block;
-                filter: brightness(100%);
-            }
-        }
 
         .ver-galeria {
-            position: absolute;
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-top: 425px;
-            display: none;
-            a {
+            padding-block: 20px;
+                a {
                 text-decoration: none;
-                width: 100px;
-                p {
-                font-size: 35px;
-                color: orange;
-            }}
-            a:hover {
-                p {
-                    color: var(--secondaryColor);
+                background: orange;
+                color: var(--mainColor);
+                padding: 12px 32px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
                 }
             }
 
+            a:hover {
+                background: var(--mainColor);
+                color: var(--secondaryColor) ;
+                transform: scale(1.05);
+            }
         }
-    }
+    
 
     p {
         color: var(--secondaryColor);
@@ -272,37 +273,36 @@ main {
         text-shadow: 0 0 5px var(--mainColor);
     }
 
-    .servicos-home {
-        
-    }
+    .servicos-home {}
 
-    .local-container{
+    .local-container {
         background-color: rgb(0, 0, 0, 0.8);
-        
+
         .local {
-        padding-top: 100px;
-        padding-bottom: 20px;
-        p {
-            color: var(--secondaryColor);
-            text-shadow: 0 0 10px var(--mainColor);
-            font-size: 50px;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 0;
-            padding-bottom: 0;
+            padding-top: 100px;
+            padding-bottom: 20px;
+
+            p {
+                color: var(--secondaryColor);
+                text-shadow: 0 0 10px var(--mainColor);
+                font-size: 50px;
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        .mapa {
+            padding: 30px;
+            padding-top: 0;
+
+            iframe {
+                border-radius: 5px;
+                height: 400px;
+            }
         }
     }
-
-    .mapa {
-        padding: 30px;
-        padding-top: 0;
-
-        iframe {
-            border-radius: 5px;
-            height: 400px;
-        }
-    }}
-
     .logo-bemvindo {
         width: 100%;
         display: flex;
@@ -315,7 +315,6 @@ main {
         }
     }
 }
-
 .main-galeria {}
 
 .main-servicos {
@@ -342,25 +341,28 @@ main {
                 color: var(--secondaryColor);
                 text-align: center;
                 padding-top: 0px !important;
+
                 .card-title {
                     height: 50px;
                 }
 
                 .btn {
-                background: orange;
-                color: var(--mainColor);
-                border-radius: 5px;
-                text-decoration: none;
-                font-weight: bold;}
-                .btn:hover{
-                background: var(--secondaryColor);
-                color: orange;
-                transform: scale(1.05);
-            }
+                    background: orange;
+                    color: var(--mainColor);
+                    border-radius: 5px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                .btn:hover {
+                    background: var(--secondaryColor);
+                    color: orange;
+                    transform: scale(1.05);
                 }
             }
         }
     }
+}
 
 .main-sobre {}
 
@@ -422,24 +424,21 @@ main {
 
         input {
             background: none;
-  border: none;
-  border-bottom: 1px solid #444;
-  color: white;
-  width: 100%;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  font-size: 16px;
+            border: none;
+            border-bottom: 1px solid #444;
+            color: white;
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            font-size: 16px;
         }
 
         select {
-            background: none;
-  border: none;
-  border-bottom: 1px solid #444;
-  color: white;
-  width: 100%;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            font-size: 16px;
 
         }
 
@@ -458,34 +457,41 @@ main {
             }
         }
 
-        .opcoes {
+        .opcoes-pai{
             width: 100%;
-            background-color: rgb(40, 40, 40);
+            background-color: rgb(30, 30, 30);
             border-radius: 10px;
             margin-block: 20px;
-        }
+            .opcoes {
+            
+        }}
 
         button {
-            padding: 10px 20px !important;
-            margin-block: 20px;
-            font-size: 20px;
-            width: 100%;
-            color: var(--mainColor);
-            background-color: orange;
-            img {
-                width: 50px;
-                margin-left: 5px;
-                filter: brightness(0%);
+                width: 100%;
+                background: orange;
+                color: var(--mainColor);
+                padding: 12px 32px;
+                margin-top: 40px;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                i {
+                    font-size: 35px;
+                    margin-left: 10px;
+                }
             }
-        }
 
-        button:hover {
-            background-color: var(--secondaryColor);
-            color: orange;
-            img {
-                
+            button:hover {
+                background: var(--secondaryColor);
+                color: orange;
+                transform: scaley(1.05) scaleX(1.01);
             }
-        }
 
         .parsley-errors-list {
             text-align: center;
@@ -554,10 +560,14 @@ footer {
             }
 
             a:hover {
-                i , img{background: var(--secondaryColor);
-                color: orange;
-                transform: scale(1.05);
-            }}
+
+                i,
+                img {
+                    background: var(--secondaryColor);
+                    color: orange;
+                    transform: scale(1.05);
+                }
+            }
         }
 
 
@@ -665,11 +675,12 @@ footer {
 
             .opcao-2-desktop {
                 display: block;
-                width: 49%;
+                width: 40%;
             }
 
             .formulario {
-                width: 50%;
+                width: 80%;
+                padding: 40px 100px;
 
                 .nome-tel {
                     width: 100%;
@@ -700,13 +711,17 @@ footer {
                 }
 
 
-                .opcoes {
+                .opcoes-pai {
+                    display: flex;
+                    justify-content: center;
+                    .opcoes {
+                    width: 80%;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-between;
                     padding: 20px;
-                }
+                }}
 
 
                 .service-period {
@@ -716,12 +731,10 @@ footer {
                     justify-content: space-between;
                     margin-bottom: 20px;
 
-                    .service {
-                        width: 74%;
-                    }
 
+                    .service,
                     .period {
-                        width: 20%;
+                        width: 47%;
 
                         select {
                             text-align: center;
@@ -743,7 +756,8 @@ footer {
 .mosaico-galeria {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-auto-rows: 260px; /* altura aumentada */
+    grid-auto-rows: 260px;
+    /* altura aumentada */
     gap: 12px;
     padding: 20px;
 }
@@ -753,7 +767,7 @@ footer {
     height: 100%;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     background: #222;
     display: flex;
     align-items: center;
@@ -770,14 +784,4 @@ footer {
 
 .mosaico-item img:hover {
     transform: scale(1.07);
-}
-
-/* Responsivo para telas menores */
-@media (max-width: 600px) {
-    .mosaico-galeria {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-        grid-auto-rows: 100px;
-        gap: 6px;
-        padding: 8px;
-    }
 }
