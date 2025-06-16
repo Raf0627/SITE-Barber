@@ -65,10 +65,6 @@
             <a href="https://sites.appbarber.com.br/pt-br/goldenline"><img src=".\imgs\ad-gpt.png" alt=""></a>
         </div>
             </form>
-        
-        <div class="opcao-ou">
-            <p>Ou</p>
-        </div>
     </div>
 </main>
 <script>

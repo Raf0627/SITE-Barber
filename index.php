@@ -55,7 +55,7 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="servicos" title="serviços">Serviços</a>
+              <a class="nav-link active nav-servicos" aria-current="page" href="servicos" title="serviços">Serviços</a>
             </li>
             <hr>
             <li class="nav-item">

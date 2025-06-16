@@ -1,7 +1,7 @@
 :root {
     --mainColor: rgb(0, 0, 0);
     --secondaryColor: rgb(255, 255, 255);
-    --terciaryColor: rgb(52, 52, 52);
+    --terciaryColor: orange;
 }
 
 * {
@@ -27,7 +27,6 @@ header {
         position: absolute;
         width: 100%;
         padding-inline: 0px !important;
-
         .navbar-brand {
             width: 200px;
 
@@ -61,9 +60,29 @@ header {
         }
 
         .nav-link:hover {
-            color: orange !important;
+            color: var(--terciaryColor) !important;
             transform: scale(1.15);
         }
+
+        .nav-servicos {
+            margin-block: 0 !important;
+            width: 150px;
+            margin-inline: auto !important;
+                background: var(--terciaryColor) !important;
+                color: var(--mainColor) !important;
+                padding: 12px 32px !important;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                transition:0.2s;
+            }
+
+            .nav-servicos:hover {
+                background: var(--secondaryColor) !important;
+                color: var(--terciaryColor) !important;
+                transform: scale(1.05);
+            }
     }
 }
 
@@ -123,37 +142,38 @@ main {
 
 
 .gradiente {
-    background: linear-gradient(to bottom, black 2%, rgb(0, 0, 0, 0));
+    background: linear-gradient(to bottom, black, rgb(0, 0, 0, 0));
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 1500px;
+    height: 1150px;
     margin-top: -200px;
 }
 
 .main-home {
 
     .titulo-home {
-        padding-bottom: 75px;
+        padding-bottom: 50px;
 
         .btn-agendar {
             display: flex;
             width: 100%;
             justify-content: center;
-
+            padding-top: 15px;
             a {
-                background: orange;
+                background: var(--terciaryColor);
                 color: var(--mainColor);
                 padding: 12px 32px;
                 border-radius: 5px;
                 text-decoration: none;
                 font-size: 20px;
                 font-weight: bold;
+                transition:0.2s;
             }
 
             a:hover {
                 background: var(--secondaryColor);
-                color: orange;
+                color: var(--terciaryColor);
                 transform: scale(1.05);
             }
         }
@@ -161,12 +181,12 @@ main {
     }
 
     .sobre-home {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 40px;
         background-color: rgb(0, 0, 0, 0.8);
-        padding: 40px 0;
+        padding: 40px 110px !important;
 
         .sobre-texto {
             width: 60%;
@@ -174,13 +194,12 @@ main {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 20px;
 
             h2 {
                 font-size: 32px;
                 font-weight: bold;
                 margin-bottom: 10px;
-                color: orange;
+                color: var(--terciaryColor);
             }
 
             p {
@@ -193,7 +212,7 @@ main {
             }
 
             .btn-sobre {
-                background: orange;
+                background: var(--terciaryColor);
                 color: var(--mainColor);
                 padding: 12px 32px;
                 border-radius: 5px;
@@ -204,8 +223,9 @@ main {
 
             .btn-sobre:hover {
                 background: var(--secondaryColor);
-                color: orange;
+                color: var(--terciaryColor);
                 transform: scale(1.05);
+                transition: transform 0.2s;
             }
         }
 
@@ -225,9 +245,10 @@ main {
 
         .columns {
             display: flex;
-            justify-content: space-evenly;
-            width: 80%;
+            justify-content: center;
+            width: 100%;
             padding-top: 30px;
+            padding-inline: 105px;
             .column {
                 width: 33%;
 
@@ -248,7 +269,7 @@ main {
             padding-block: 20px;
                 a {
                 text-decoration: none;
-                background: orange;
+                background: var(--terciaryColor);
                 color: var(--mainColor);
                 padding: 12px 32px;
                 border-radius: 5px;
@@ -262,6 +283,7 @@ main {
                 background: var(--mainColor);
                 color: var(--secondaryColor) ;
                 transform: scale(1.05);
+                transition: transform 0.2s;
             }
         }
     
@@ -347,7 +369,7 @@ main {
                 }
 
                 .btn {
-                    background: orange;
+                    background: var(--terciaryColor);
                     color: var(--mainColor);
                     border-radius: 5px;
                     text-decoration: none;
@@ -356,8 +378,9 @@ main {
 
                 .btn:hover {
                     background: var(--secondaryColor);
-                    color: orange;
+                    color: var(--terciaryColor);
                     transform: scale(1.05);
+                transition: transform 0.2s;
                 }
             }
         }
@@ -439,7 +462,7 @@ main {
             padding: 10px 0;
             margin-bottom: 20px;
             font-size: 16px;
-
+            cursor: pointer;
         }
 
         .alternativa input[type="radio"] {
@@ -468,11 +491,11 @@ main {
 
         button {
                 width: 100%;
-                background: orange;
+                background: var(--terciaryColor);
                 color: var(--mainColor);
                 padding: 12px 32px;
                 margin-top: 40px;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
                 border-radius: 5px;
                 text-decoration: none;
                 font-size: 20px;
@@ -489,8 +512,9 @@ main {
 
             button:hover {
                 background: var(--secondaryColor);
-                color: orange;
+                color: var(--terciaryColor);
                 transform: scaley(1.05) scaleX(1.01);
+                transition: transform 0.2s;
             }
 
         .parsley-errors-list {
@@ -515,15 +539,15 @@ footer {
     width: 100%;
     background-color: var(--mainColor);
     bottom: 0px;
-    padding: 20px;
-    padding-bottom: 0;
+    padding: 30px 20px;
+    padding-bottom: 0px;
     border-top: 3px solid var(--secondaryColor);
 
     .img-footer {
         width: 100%;
         display: flex;
         justify-content: center;
-
+        padding-bottom: 20px;
         img {
             width: 100px;
         }
@@ -535,6 +559,7 @@ footer {
         color: var(--secondaryColor);
         margin: 0;
         padding: 40px;
+        padding-top: 0px;
     }
 
     i {
@@ -546,7 +571,7 @@ footer {
         width: 300px;
         justify-content: space-evenly;
         margin-inline: auto;
-
+        padding-bottom: 30px;
         .column {
             text-align: center;
 
@@ -564,8 +589,9 @@ footer {
                 i,
                 img {
                     background: var(--secondaryColor);
-                    color: orange;
+                    color: var(--terciaryColor);
                     transform: scale(1.05);
+                transition: transform 0.2s;
                 }
             }
         }
@@ -577,6 +603,7 @@ footer {
                 background-color: var(--secondaryColor);
                 border-radius: 100%;
             }
+            
         }
     }
 }
@@ -602,15 +629,14 @@ footer {
             }
 
             .container-fluid {
-                margin-right: 50px;
-
+                margin-right: 100px;
                 .navbar-nav {
                     width: 100%;
                     display: flex;
                     justify-content: flex-end;
 
                     .nav-item {
-                        margin-inline: 40px;
+                        margin-left: 60px;
                     }
                 }
             }
@@ -679,9 +705,9 @@ footer {
             }
 
             .formulario {
-                width: 80%;
+                width: 900px;
                 padding: 40px 100px;
-
+                margin-inline: auto;
                 .nome-tel {
                     width: 100%;
                     display: flex;
