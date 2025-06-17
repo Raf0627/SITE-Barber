@@ -21,16 +21,24 @@
     <div class="galeria-home">
         <div class="columns">
             <div class="column column-1">
-                <div class="img img-1"><img src="imgs/1.jpg" alt=""></div>
-                <div class="img img-2"><img src="imgs/2.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/8.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/2.jpg" alt=""></div>
+            </div>
+            <div class="column column-1">
+                <div class="img img-1"><img src="imgs/10.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/24.jpg" alt=""></div>
             </div>
             <div class="column column-2">
-                <div class="img img-2"><img src="imgs/3.jpg" alt=""></div>
-                <div class="img img-1"><img src="imgs/15.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/19.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/12.jpg" alt=""></div>
             </div>
-            <div class="column column-3">
-                <div class="img img-1"><img src="imgs/17.jpg" alt=""></div>
+            <div class="column column-2">
+                <div class="img img-2"><img src="imgs/34.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/17.jpg" alt=""></div>
+            </div>
+            <div class="column column-2">
                 <div class="img img-2"><img src="imgs/18.jpg" alt=""></div>
+                <div class="img img-2"><img src="imgs/33.jpg" alt=""></div>
             </div>
         </div>
         <div class="ver-galeria"><a href="galeria">Ver Galeria</a></div>

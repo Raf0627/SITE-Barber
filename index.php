@@ -43,23 +43,23 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <hr>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home" title="início">Início</a>
+              <a class="nav-link active" aria-current="page" href="home" title="início"><i class="fa-solid fa-house"></i>Início</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="sobre" title="sobre">Sobre</a>
+              <a class="nav-link active" aria-current="page" href="sobre" title="sobre"><i class="fa-solid fa-circle-info"></i>Sobre</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="galeria" title="galeria">Galeria</a>
+              <a class="nav-link active" aria-current="page" href="galeria" title="galeria"><i class="fa-solid fa-image"></i>Galeria</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link active nav-servicos" aria-current="page" href="servicos" title="serviços">Serviços</a>
+              <a class="nav-link active nav-servicos" aria-current="page" href="servicos" title="serviços"><i class="fa-solid fa-scissors"></i>Serviços</a>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contato" title="contato">Contato</a>
+              <a class="nav-link active" aria-current="page" href="contato" title="contato"><i class="fa-solid fa-phone"></i>Contato</a>
             </li>
           </ul>
         </div>
