@@ -21,8 +21,8 @@
     <div class="galeria-home">
         <div class="columns">
             <div class="column column-1">
-                <div class="img img-1"><img src="imgs/8.jpg" alt=""></div>
                 <div class="img img-1"><img src="imgs/2.jpg" alt=""></div>
+                <div class="img img-1"><img src="imgs/8.jpg" alt=""></div>
             </div>
             <div class="column column-1">
                 <div class="img img-1"><img src="imgs/10.jpg" alt=""></div>

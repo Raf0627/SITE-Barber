@@ -28,7 +28,7 @@ header {
         width: 100%;
         padding-inline: 0px !important;
         .navbar-brand {
-            width: 200px;
+            width: 175px;
 
             margin-left: 20px;
 
@@ -36,8 +36,10 @@ header {
                 width: 100%;
                 padding: 10px;
                 padding-bottom: 0;
+                transition: transform 0.2s;
             }
         }
+
 
         .navbar-toggler {
             background-color: var(--secondaryColor);
@@ -69,11 +71,11 @@ header {
 
         .nav-servicos {
             margin-block: 0 !important;
-            width: 160px;
+            width: 140px;
             margin-inline: auto !important;
                 background: var(--terciaryColor) !important;
                 color: var(--mainColor) !important;
-                padding: 12px 1px !important;
+                padding: 10px 0px !important;
                 border-radius: 5px;
                 text-decoration: none;
                 font-size: 18px;
@@ -119,7 +121,7 @@ header {
 
 
 main {
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 40px;
 
     .img-fundo {
@@ -132,7 +134,6 @@ main {
     .titulo {
         width: 100%;
         margin-bottom: 50px;
-
         h1 {
             color: var(--secondaryColor);
             font-size: 50px;
@@ -157,7 +158,10 @@ main {
 
     .titulo-home {
         padding-bottom: 50px;
-
+        padding-inline: 20px;
+        h1 {
+            margin-bottom: 30px;
+        }
         .btn-agendar {
             display: flex;
             width: 100%;
@@ -178,6 +182,12 @@ main {
                 background: var(--secondaryColor);
                 color: var(--terciaryColor);
                 transform: scale(1.05);
+            }
+        }
+
+        .logo-bemvindo {
+            img {
+                width: 100%;
             }
         }
 
@@ -551,7 +561,7 @@ footer {
         justify-content: center;
         padding-bottom: 20px;
         img {
-            width: 100px;
+            width: 125px;
         }
     }
 
@@ -560,7 +570,7 @@ footer {
         text-align: center;
         color: var(--secondaryColor);
         margin: 0;
-        padding: 40px;
+        padding: 30px;
         padding-top: 0px;
     }
 
@@ -631,7 +641,7 @@ footer {
             }
 
             .container-fluid {
-                margin-right: 40px;
+                margin-right: 100px;
                 .navbar-nav {
                     width: 100%;
                     display: flex;
@@ -663,6 +673,16 @@ footer {
     main {}
 
     .main-home {
+        .titulo-home {
+            h1 {
+                margin-bottom: 0;
+            }
+            .logo-bemvindo {
+                img {
+                    width: 500px;
+                }
+            }
+        }
 
         .mapa {
             display: flex;
