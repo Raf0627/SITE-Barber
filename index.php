@@ -24,8 +24,6 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 </head>
 
@@ -118,11 +116,13 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/parsley.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/fslightbox.js"></script>
   <script>
-    AOS.init({
-    });
-  </script>
-  <script>
+    AOS.init({ offset:50});
     let lastScroll = 0;
     const header = document.getElementById('mainHeader');
 
@@ -137,44 +137,11 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
       }
       lastScroll = currentScroll;
     });
-  </script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/parsley.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
-  <script src="js/sweetalert2.all.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/fslightbox.js"></script>
-  <script>
+
     $(document).ready(function() {
       $(".tel").mask("(00) 00000-0000");
-    })
+    });
   </script>
-  <script>
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    autoplayTimeout: 0, // sem intervalo fixo
-    autoplaySpeed: 3000, // velocidade da animação (mais alto = mais suave)
-    autoplayHoverPause: false,
-    smartSpeed: 3000, // suaviza a transição
-    slideTransition: 'linear', // transição contínua
-    items: 6, // quantidade de imagens visíveis
-    responsive: {
-      0: {
-        items: 2
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
-  });
-});
-</script>
 </body>
 
 </html>

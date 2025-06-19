@@ -20,7 +20,7 @@
       $valor = $dados['valor'];
       $param = isset($servicoParams[$nome]) ? $servicoParams[$nome] : "";
       echo "
-        <div class='card col-12 col-md-4' style='width: 18rem;' data-aos='zoom-in'>
+        <div class='card col-12 col-md-4' style='width: 18rem;' data-aos='fade-up' data-aos-offset='75'>
           <img src='{$foto}' class='card-img-top' alt='ícone de cortes'>
           <div class='card-body'>
             <br>

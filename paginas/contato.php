@@ -3,7 +3,7 @@
             <div class="titulo titulo-contato" data-aos="zoom-in">
                 <h1>Contato</h1>
             </div>
-            <form data-aos="zoom-in" data-parsley-validate>
+            <form data-aos="fade-up" data-parsley-validate>
                 <div class="formulario">
                     <p>Opção 1</p>
                     <div class="nome-tel">
