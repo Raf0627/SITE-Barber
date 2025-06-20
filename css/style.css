@@ -160,10 +160,10 @@ main {
 .main-home {
 
     .titulo-home {
-        padding-inline: 20px;
+        padding-inline: 40px;
 
         h1 {
-            padding: 20px;
+            padding-bottom: 20px;
             padding-top: 0px;
             margin-bottom: 0px;
 
@@ -371,7 +371,7 @@ main {
             }
 
             .mapa {
-                padding: 30px;
+                padding: 40px;
                 padding-top: 0;
                 padding-bottom: 100px;
 
@@ -431,7 +431,6 @@ main {
                 color: var(--secondaryColor);
                 text-align: center;
                 padding-top: 0px !important;
-
                 .card-title {
                     height: 50px;
                 }
@@ -465,11 +464,47 @@ main {
       align-items: center;
       justify-content: center;
       z-index: 999;
+
+      .card-zoom {
+            border-width: 3px;
+            border-color: var(--secondaryColor);
+            box-shadow: 0px 0px 10px rgb(55, 55, 55);
+            display: flex;
+            img {
+                border: 3px solid rgb(0, 0, 0);
+                border-radius: 0;
+            }
+
+            .card-body {
+                background-color: var(--mainColor);
+                color: var(--secondaryColor);
+                text-align: center;
+                padding-top: 0px !important;
+
+                .card-title {
+                    height: 50px;
+                }
+
+                a {
+                    background: var(--terciaryColor);
+                    color: var(--mainColor);
+                    border-radius: 5px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                a:hover {
+                    background: var(--secondaryColor);
+                    color: var(--terciaryColor);
+                    transform: scale(1.05);
+                    transition: transform 0.2s;
+                }
+            }
+    }
     }
 
     /* Card em si */
-    .card-zoom {
-    }
+    
 }
 
 

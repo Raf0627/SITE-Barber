@@ -5,7 +5,7 @@
   <div class="all-cards">
     <?php
     include "array.php";
-    
+
     foreach ($servicos as $dados) {
       $nome = $dados['nome'];
       $foto = $dados['foto'];
@@ -17,7 +17,7 @@
             <br>
             <h5 class='card-title'>{$nome}</h5>
             <p class='card-text'>{$valor}</p>
-            <a onclick='abrirCard()' class='btn agendar-btn' title='Agendar'>Agendar</a>
+            <a onclick='abrirCard(\"{$nome}\", \"{$foto}\",\"{$valor}\")' class='btn agendar-btn' title='Agendar'>Agendar</a>
           </div>
         </div>
         ";
@@ -25,17 +25,30 @@
     ?>
   </div>
   <div class="overlay" id="overlay" onclick="fecharCard(event)">
-    <div class="card-zoom card" onclick="event.stopPropagation()">
-      Olá
+    <div class="card" onclick="event.stopPropagation()">
+      <div class="card card-zoom" onclick="event.stopPropagation()" style="width: 500px;">
+        <img src="imgs/full.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <label for="name">nome</label>
+          <input type="text" class="card-text"></input>
+          <a href="#" class="">Agendar<i class="fa-brands fa-whatsapp" aria-label="WhatsApp"></i></a>
+        </div>
+      </div>
     </div>
   </div>
 </main>
 <script>
-  function abrirCard() {
-        document.getElementById('overlay').style.display = 'flex';
-      }
-  
-      function fecharCard(event) {
-        document.getElementById('overlay').style.display = 'none';
-      }
+  function abrirCard(nome, foto, valor) {
+    document.getElementById('overlay').style.display = 'flex';
+    // Atualiza o valor e a foto no card do overlay
+    document.querySelector('#overlay .card-zoom .card-title').textContent = nome;
+    document.querySelector('#overlay .card-zoom .card-img-top').src = foto;
+    document.querySelector('#overlay .card-zoom .card-text').textContent = valor;
+  }
+
+  function fecharCard(event) {
+    document.getElementById('overlay').style.display = 'none';
+  }
 </script>
