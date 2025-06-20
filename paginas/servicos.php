@@ -5,20 +5,11 @@
   <div class="all-cards">
     <?php
     include "array.php";
-    // Mapeamento para o parâmetro de serviço na URL
-    $servicoParams = [
-      "Cabelo + Barba + Sobrancelha" => "cbs",
-      "Cabelo + Barba" => "cb",
-      "Cabelo + Sobrancelha" => "cs",
-      "Cabelo" => "c",
-      "Barba" => "b",
-      "Sobrancelha" => "s"
-    ];
+    
     foreach ($servicos as $dados) {
       $nome = $dados['nome'];
       $foto = $dados['foto'];
-      $valor = $dados['valor'];
-      $param = isset($servicoParams[$nome]) ? $servicoParams[$nome] : "";
+      $valor = $dados['valor'];;
       echo "
         <div class='card col-12 col-md-4' style='width: 18rem;' data-aos='fade-up' data-aos-offset='75'>
           <img src='{$foto}' class='card-img-top' alt='ícone de cortes'>
@@ -26,11 +17,25 @@
             <br>
             <h5 class='card-title'>{$nome}</h5>
             <p class='card-text'>{$valor}</p>
-            <a href='contato?servico={$param}' class='btn agendar-btn' data-servico='{$param}' title='Agendar'>Agendar</a>
+            <a onclick='abrirCard()' class='btn agendar-btn' title='Agendar'>Agendar</a>
           </div>
         </div>
         ";
     }
     ?>
   </div>
+  <div class="overlay" id="overlay" onclick="fecharCard(event)">
+    <div class="card-zoom card" onclick="event.stopPropagation()">
+      Olá
+    </div>
+  </div>
 </main>
+<script>
+  function abrirCard() {
+        document.getElementById('overlay').style.display = 'flex';
+      }
+  
+      function fecharCard(event) {
+        document.getElementById('overlay').style.display = 'none';
+      }
+</script>
