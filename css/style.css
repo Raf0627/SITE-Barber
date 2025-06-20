@@ -35,8 +35,6 @@ header {
         .navbar-brand {
             width: 175px;
 
-            margin-left: 20px;
-
             img {
                 padding: 10px;
                 padding-bottom: 0;
@@ -163,9 +161,10 @@ main {
 
     .titulo-home {
         padding-inline: 20px;
-
         h1 {
-            margin-bottom: 30px;
+            padding: 20px;
+            padding-top: 0px;
+            margin-bottom: 0px;
 
         }
 
@@ -177,12 +176,25 @@ main {
             width: 100%;
             text-shadow: 0 0 5px var(--mainColor);
         }
+        .logo-bemvindo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+    
+            img {
+                width: 100%;
+                margin-inline: auto;
+                margin-top: 30px;
+            }
+        }
 
         .btn-agendar {
             display: flex;
             width: 100%;
             justify-content: center;
-            padding-top: 15px;
+            padding-top: 60px;
+            padding-bottom: 0px;
 
             a {
                 background: var(--terciaryColor);
@@ -213,34 +225,37 @@ main {
         .sobre-home {
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            padding: 40px 110px !important;
+            padding: 40px !important;
 
-            .sobre-texto {
-                width: 60%;
+            .sobre-content {
+                width: 100%;
                 color: var(--secondaryColor);
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                text-align: center;
+                position: relative;
 
                 h2 {
                     font-size: 32px;
                     font-weight: bold;
-                    margin-bottom: 10px;
+                    margin-bottom: 30px;
                     color: var(--terciaryColor);
                 }
 
-                p {
+                .sobre-p{p {
                     font-size: 20px;
                     color: var(--secondaryColor);
-                    margin-bottom: 10px;
-                    background: none;
+                    margin-block: 30px;
                     width: 100%;
-                    text-align: left;
-                }
+                    text-align: center;
+                    padding-top: 440px;
+                }}
 
                 .btn-sobre {
+                    width: 180px;
+                    margin-inline: auto;
                     background: var(--terciaryColor);
                     color: var(--mainColor);
                     padding: 12px 32px;
@@ -256,37 +271,36 @@ main {
                     transform: scale(1.05);
                     transition: transform 0.2s;
                 }
+                .img-sobre{
+                    position: absolute;
+                    padding-top: 70px;
+                    img {
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+                }}
             }
 
-            img {
-                width: 30%;
-                border-radius: 10px;
-                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
-            }
         }
 
         .galeria-home {
             width: 100%;
             background-color: var(--secondaryColor);
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
-
             .columns {
                 width: 100%;
-                padding: 50px 110px;
                 display: flex;
                 flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-evenly;
-                align-items: center;
-
+                flex-wrap: wrap;
                 .column {
+                    width: 25%;
                     display: flex;
                     flex-direction: column;
-
+                    flex-wrap: nowrap;
                     img {
-                        filter: brightness(70%);
+                        transition: none;
+                        filter: grayscale(100%) brightness(50%);
                     }
                 }
 
@@ -295,7 +309,9 @@ main {
                     display: flex;
                     justify-content: center;
                     z-index: 10;
-
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
                     a {
                         text-decoration: none;
                         background: var(--terciaryColor);
@@ -305,6 +321,7 @@ main {
                         text-decoration: none;
                         font-size: 20px;
                         font-weight: bold;
+                        height: 55px;
                     }
                 }
 
@@ -313,13 +330,6 @@ main {
                     color: var(--terciaryColor);
                     transform: scale(1.05);
                     transition: transform 0.2s;
-                }
-                .ver-galeria:hover ~ .column {
-                    
-                    img {
-                        transition: none;
-                        filter: grayscale(100%) brightness(50%);
-                    }
                 }
             }
         }
@@ -362,17 +372,6 @@ main {
         }
     }
 
-    .logo-bemvindo {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-
-        img {
-            width: 500px;
-            margin-inline: auto;
-        }
-    }
 }
 
 .main-galeria {
@@ -725,13 +724,186 @@ footer {
 
     .main-home {
         .titulo-home {
-            h1 {
-                margin-bottom: 0;
+        padding-inline: 20px;
+        margin-bottom: 80px;
+        h1 {
+            margin-bottom: 0;
+
+        }
+
+        p {
+            font-size: 20px;
+            color: var(--secondaryColor);
+            margin-bottom: 10px;
+            background: none;
+            width: 100%;
+            text-shadow: 0 0 5px var(--mainColor);
+        }
+        .logo-bemvindo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+    
+            img {
+                width: 500px;
+                margin-inline: auto;
+            }
+        }
+
+        .btn-agendar {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding-top: 15px;
+
+            a {
+                background: var(--terciaryColor);
+                color: var(--mainColor);
+                padding: 12px 32px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                transition: 0.2s;
             }
 
-            .logo-bemvindo {
-                img {
-                    width: 500px;
+            a:hover {
+                background: var(--secondaryColor);
+                color: var(--terciaryColor);
+                transform: scale(1.05);
+            }
+        }
+
+        
+
+    }
+
+    .fade-home{.sobre-home {
+            width: 100%;
+            display: flex;
+            padding: 60px 110px !important;
+
+            .sobre-content {
+                width: 100%;
+                color: var(--secondaryColor);
+                display: flex;
+                align-items: flex-start;
+                position: relative;
+                padding-block: 140px;
+                h2 {
+                    margin: 0;
+                    width: 60%;
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    color: var(--terciaryColor);
+                    text-align: left;
+                }
+
+                .sobre-p{
+                    width: 60%;
+                    p {
+                        padding: 0;
+                    margin: 0;
+                    font-size: 20px;
+                    color: var(--secondaryColor);
+                    margin-bottom: 10px;
+                    text-align: left;
+                }}
+
+                .btn-sobre {
+                    background: var(--terciaryColor);
+                    color: var(--mainColor);
+                    padding: 12px 32px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 0px ;
+                    margin-top: 20px;
+                }
+
+                .btn-sobre:hover {
+                    background: var(--secondaryColor);
+                    color: var(--terciaryColor);
+                    transform: scale(1.05);
+                    transition: transform 0.2s;
+                }
+                .img-sobre{
+                    padding: 0;
+                    top: 0;
+                    display: flex;
+                    justify-content: end;
+                    width: 100%;
+                    z-index: -1;
+                    img {
+                    width: 400px !important;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+                }}
+            }
+            
+        }
+
+        .galeria-home {
+            width: 100%;
+            background-color: var(--secondaryColor);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .columns {
+                width: 100%;
+                padding: 50px 110px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .column {
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        filter: brightness(70%);
+                    }
+                }
+
+                .ver-galeria {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    z-index: 10;
+                    padding: 0;
+                    width: auto;
+                    height: auto;
+                    a {
+                        text-decoration: none;
+                        background: var(--terciaryColor);
+                        color: var(--mainColor);
+                        padding: 12px 32px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+
+                a:hover{
+                    background: var(--secondaryColor);
+                    color: var(--terciaryColor);
+                    transform: scale(1.05);
+                    transition: transform 0.2s;
+                }
+                .ver-galeria:hover ~ .column {
+                    
+                    img {
+                        transition: none;
+                        filter: grayscale(100%) brightness(50%);
+                    }
                 }
             }
         }
@@ -743,7 +915,7 @@ footer {
             iframe {
                 width: 70%;
             }
-        }
+        }}
     }
 
    
@@ -854,37 +1026,4 @@ footer {
             width: 600px;
         }
     }
-}
-
-.mosaico-galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-auto-rows: 260px;
-    /* altura aumentada */
-    gap: 12px;
-    padding: 20px;
-}
-
-.mosaico-item {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    background: #222;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mosaico-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s;
-}
-
-.mosaico-item img:hover {
-    transform: scale(1.07);
 }

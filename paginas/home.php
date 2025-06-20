@@ -9,14 +9,16 @@
 
     <div class="fade-home" data-aos="fade-up">
         <div class="sobre-home"data-aos="fade-up">
-            <div class="sobre-texto">
+            <div class="sobre-content">
+                <div class="img-sobre"><img src="imgs/samuca.jpg" alt="Samuel Miranda"></div>
                 <h2>Sobre mim</h2>
-                <p>
-                    Sou barbeiro profissional, apaixonado por transformar visuais e proporcionar uma experiência única para cada cliente. Clique abaixo para conhecer minha história e trajetória!
-                </p>
+                <div class="sobre-p">
+                    <p>
+                        Sou barbeiro profissional, apaixonado por transformar visuais e proporcionar uma experiência única para cada cliente. Clique abaixo para conhecer minha história e trajetória!
+                    </p>
+                </div>
                 <a href="sobre" class="btn-sobre">Saiba mais</a>
             </div>
-            <img src="imgs/samuca.jpg" alt="Samuel Miranda">
         </div>
     
         <div class="galeria-home"data-aos="fade-up">
@@ -38,19 +40,19 @@
                         <div class="img img-2"><img src="imgs/26.jpg" alt=""></div>
                         <div class="img img-2"><img src="imgs/17.jpg" alt=""></div>
                     </div>
-                    <div class="column column-2">
+                    <div class="column column-3">
                         <div class="img img-2"><img src="imgs/18.jpg" alt=""></div>
                         <div class="img img-2"><img src="imgs/33.jpg" alt=""></div>
                     </div>
-                    <div class="column column-2">
+                    <div class="column column-3">
                         <div class="img img-2"><img src="imgs/32.jpg" alt=""></div>
                         <div class="img img-2"><img src="imgs/15.jpg" alt=""></div>
                     </div>
-                    <div class="column column-2">
+                    <div class="column column-4">
                         <div class="img img-2"><img src="imgs/21.jpg" alt=""></div>
                         <div class="img img-2"><img src="imgs/54.jpg" alt=""></div>
                     </div>
-                    <div class="column column-2">
+                    <div class="column column-4">
                         <div class="img img-2"><img src="imgs/30.jpg" alt=""></div>
                         <div class="img img-2"><img src="imgs/20.jpg" alt=""></div>
                     </div>
