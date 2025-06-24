@@ -10,8 +10,10 @@
     <div class="fade-home" data-aos="fade-up">
         <div class="sobre-home"data-aos="fade-up">
             <div class="sobre-content">
-                <div class="img-sobre"><img src="imgs/samuca.jpg" alt="Samuel Miranda"></div>
-                <h2>Sobre mim</h2>
+                <div class="sobre-h2-img">
+                    <div class="img-sobre"><img src="imgs/samuca.jpg" alt="Samuel Miranda"></div>
+                    <h2>Sobre mim</h2>
+                </div>
                 <div class="sobre-p">
                     <p>
                         Sou barbeiro profissional, apaixonado por transformar visuais e proporcionar uma experiência única para cada cliente. Clique abaixo para conhecer minha história e trajetória!
@@ -29,7 +31,7 @@
                         <div class="img img-1"><img src="imgs/8.jpg" alt=""></div>
                     </div>
                     <div class="column column-1">
-                        <div class="img img-1"><img src="imgs/10.jpg" alt=""></div>
+                        <div class="img img-1"><img src="imgs/43.jpg" alt=""></div>
                         <div class="img img-1"><img src="imgs/24.jpg" alt=""></div>
                     </div>
                     <div class="column column-2">

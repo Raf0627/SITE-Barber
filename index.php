@@ -1,6 +1,6 @@
 <?php
 
-$base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
+$base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
 
 ?>
 
@@ -11,7 +11,7 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Barber</title>
-  <base href="http://<?= $base ?>">
+  <base href="<?= $base ?>">
   <link rel="icon" href="imgs/sam-barber-min.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -21,9 +21,7 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/all.min.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </head>
 
@@ -66,10 +64,10 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
   </header>
 
   <div class="background bg-desktop">
-    <img src="imgs/barbearia.jpg" alt="barbearia-fundo">
+    <img src="imgs/barber.jpg" alt="barbearia-fundo">
   </div>
   <div class="background bg-mobile">
-    <img src="imgs/barbearia-mobile.jpg" alt="barbearia-fundo-mobile">
+    <img src="imgs/barberMb.jpg" alt="barbearia-fundo-mobile">
   </div>
   <div class="gradiente"></div>
   <main>
@@ -118,11 +116,13 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/parsley.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
   <script src="js/sweetalert2.all.min.js"></script>
   <script src="js/fslightbox.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script>
-    AOS.init({ offset:50});
+    AOS.init({
+      offset: 40,
+    });
     let lastScroll = 0;
     const header = document.getElementById('mainHeader');
 
@@ -139,7 +139,7 @@ $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
     });
 
     $(document).ready(function() {
-      $(".tel").mask("(00) 00000-0000");
+      $("#tel").mask("(00) 00000-0000");
     });
   </script>
 </body>
