@@ -3,7 +3,7 @@
     <h1>Galeria</h1>
   </div>
   <div class="galeria-fotos">
-    <div class="container-galeria">
+    <div class="container-galeria" data-aos="fade-up">
       <?php
       include "fotos.php";
   

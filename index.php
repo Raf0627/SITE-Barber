@@ -109,7 +109,7 @@ $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
     <div class="img-footer">
       <img src="imgs/sambarber-logo.png" alt="Logo SamBarber">
     </div>
-    <p>©Todos os direitos reservados.</p>
+    <p>© Desenvolvido por Rafael Frossard</p>
   </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
