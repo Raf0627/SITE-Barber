@@ -409,7 +409,7 @@ main {
         flex-direction: row;
         flex-wrap: wrap;
         overflow: hidden;
-        
+
         .container-galeria {
             height: 4275px;
             width: 33%;
@@ -1438,4 +1438,16 @@ footer {
 .star-rating:hover .star:nth-child(5):hover~.star:nth-child(3),
 .star-rating:hover .star:nth-child(5):hover~.star:nth-child(4) {
     color: var(--terciaryColor);
+}
+
+.main-servicos .overlay {
+    z-index: 1000;
+}
+
+.main-servicos .overlay form .card-zoom {
+    z-index: 1001;
+}
+
+.swal2-container {
+    z-index: 3000 !important;
 }
