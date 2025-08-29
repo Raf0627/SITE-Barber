@@ -1,28 +1,30 @@
+<?php
+
+  require "./src/conexao-db.php";
+  require "./src/Modelo/Servico.php";
+  require "./src/Repositorio/ServicoRepositorio.php";
+
+  $servicoRepositorio = new ServicoRepositorio($pdo);
+  $dadosServicos = $servicoRepositorio->opcoesServicos();
+
+?>
+
 <main class="main-servicos">
   <div class="titulo" data-aos="zoom-in">
     <h1>Serviços</h1>
   </div>
   <div class="all-cards">
-    <?php
-    include "array.php";
-
-    foreach ($servicos as $dados) {
-      $nome = $dados['nome'];
-      $foto = $dados['foto'];
-      $valor = $dados['valor'];;
-      echo "
+    <?php foreach ($dadosServicos as $servico):?> 
         <div class='card col-12 col-md-4' style='width: 18rem;' data-aos='fade-up' data-aos-offset='75'>
-          <img src='{$foto}' class='card-img-top' alt='ícone de cortes'>
+          <img src=<?= $servico->getImagemDiretorio()?> class='card-img-top' alt='ícone de cortes'>
           <div class='card-body'>
             <br>
-            <h5 class='card-title'>{$nome}</h5>
-            <p class='card-text'>{$valor}</p>
-            <a onclick='abrirCard(\"{$nome}\", \"{$foto}\",\"{$valor}\")' class='btn agendar-btn' title='Agendar'>Agendar</a>
+            <h5 class='card-title'><?= $servico->getNome()?></h5>
+            <p class='card-text'><?='R$'. number_format($servico->getPreco(),2)?></p>
+            <p class='card-text'><?= $servico->getTempo()?></p>
           </div>
         </div>
-        ";
-    }
-    ?>
+    <?php endforeach; ?>
   </div>
   <div class="overlay" id="overlay" onclick="fecharCard(event)">
     <form>

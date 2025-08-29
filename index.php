@@ -57,6 +57,11 @@ $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contato" title="contato"><i class="fa-solid fa-phone"></i>Contato</a>
             </li>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="admin" title="admin"><i class="fa-solid fa-phone"></i>Admin</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -79,7 +84,6 @@ $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
 
     $pagina = "paginas/{$param}.php";
 
-    //verificar se este arquivo existe
     if (file_exists($pagina))
       include $pagina;
     else

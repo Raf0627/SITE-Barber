@@ -430,6 +430,7 @@ main {
     }
 }
 
+
 .main-servicos {
     padding-bottom: 10px;
 
@@ -1221,135 +1222,6 @@ footer {
     }
 
     .main-contato {
-
-
-        form {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            .formulario {
-                width: 60%;
-                padding: 40px 100px;
-                margin-inline: auto;
-
-                .nome-tel {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-
-                    .class-nome,
-                    .class-tel {
-                        width: 47%;
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-
-
-
-
-                .alternativa {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;
-
-                    input {
-
-                        margin: 0px;
-                    }
-                }
-
-
-                .opcoes-pai {
-
-                    .opcoes {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 20px;
-                    }
-                }
-            }
-
-            .opcao-2 {
-                border-left: #444 solid 2px;
-                width: 40%;
-                display: flex;
-                flex-direction: column;
-                padding: 40px;
-                align-items: center;
-                justify-content: center;
-                gap: 30px;
-                background: linear-gradient(135deg, #232526 0%, #414345 100%);
-                border-radius: 0 10px 10px 0;
-                box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
-
-                .contato-title {
-                    color: var(--terciaryColor);
-                    font-size: 2rem;
-                    font-weight: bold;
-                    margin-bottom: 10px;
-                    text-align: center;
-                    letter-spacing: 1px;
-                }
-
-                .contato-desc {
-                    color: var(--secondaryColor);
-                    font-size: 1.1rem;
-                    margin-bottom: 20px;
-                    text-align: center;
-                    opacity: 0.85;
-                }
-
-                .contato-btns {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 18px;
-                    width: 100%;
-                    align-items: center;
-
-                    a {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 12px;
-                        width: 90%;
-                        max-width: 320px;
-                        padding: 18px 0;
-                        font-size: 1.2rem;
-                        font-weight: bold;
-                        border-radius: 8px;
-                        color: #fff;
-                        text-decoration: none;
-                        transition: transform 0.15s, box-shadow 0.15s;
-                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-
-                        &.zap-link {
-                            background: linear-gradient(90deg, #25D366 60%, #128C7E 100%);
-                        }
-
-                        &.insta-link {
-                            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-                        }
-
-                        &:hover {
-                            transform: scale(1.04);
-                            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
-                            opacity: 0.93;
-                        }
-
-                        i {
-                            font-size: 2rem;
-                        }
-                    }
-                }
-            }
-        }
 
         form {
             flex-direction: row;
