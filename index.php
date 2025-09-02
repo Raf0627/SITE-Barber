@@ -2,6 +2,12 @@
 
 $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
 
+  require "./src/conexao-db.php";
+  require "./src/Modelo/Cliente.php";
+  require "./src/Repositorio/ClienteRepositorio.php";
+  require "./src/Modelo/Servico.php";
+  require "./src/Repositorio/ServicoRepositorio.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -61,6 +67,11 @@ $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
             <hr>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="admin" title="admin"><i class="fa-solid fa-phone"></i>Admin</a>
+            </li>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login" title="login"><i class="fa-solid fa-phone"></i>login</a>
             </li>
           </ul>
         </div>

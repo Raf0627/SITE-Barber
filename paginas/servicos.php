@@ -1,9 +1,5 @@
 <?php
 
-  require "./src/conexao-db.php";
-  require "./src/Modelo/Servico.php";
-  require "./src/Repositorio/ServicoRepositorio.php";
-
   $servicoRepositorio = new ServicoRepositorio($pdo);
   $dadosServicos = $servicoRepositorio->opcoesServicos();
 

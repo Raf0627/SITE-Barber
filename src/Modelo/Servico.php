@@ -2,19 +2,19 @@
 
 class Servico
 {
-    private int $id;
+    private ?int $id;
     private string $nome;
     private string $tempo;
-    private string $imagem;
     private float $preco;
+    private string $imagem;
 
-    public function __construct(int $id, string $nome, string $tempo, string $imagem, float $preco)
+    public function __construct(?int $id, string $nome, string $tempo, float $preco, string $imagem = 'barberMb.jpg')
     {
         $this->id = $id;
         $this->nome = $nome;
         $this->tempo = $tempo;
-        $this->imagem = $imagem;
         $this->preco = $preco;
+        $this->imagem = $imagem;
     }
 
     public function getId(): int
@@ -39,16 +39,16 @@ class Servico
 
     public function getImagemDiretorio(): string
     {
-        return './imgs/'.$this->imagem;
+        return './imgs/' . $this->imagem;
     }
 
     public function getPreco(): float
     {
         return $this->preco;
     }
-    
+
     public function getPrecoFormatado(): string
     {
-        return 'R$'. number_format($this->preco,2);
+        return 'R$' . number_format($this->preco, 2);
     }
 }
