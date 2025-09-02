@@ -18,7 +18,7 @@
         <form action="excluirServico" method="post">
           <input type="hidden" name="id" value="<?= $servico->getId()?>">
           <input type="submit" value="Excluir">
-          <a href="?param=editarServico&id=<?= $servico->getId()?>">Editar</a>
+          <a href="editarServico&id=<?= $servico->getId()?>">Editar</a>
         </form>
           <img src=<?= $servico->getImagemDiretorio()?> class='card-img-top' alt='ícone de cortes'>
           <div class='card-body'>

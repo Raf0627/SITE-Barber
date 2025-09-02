@@ -6,6 +6,13 @@
     $_POST['nome'],
     $_POST['tempo'],
     $_POST['preco']);
+          
+    if (isset($_FILES['imagem']))
+    {
+        $servico->setImagem(uniqid().$_FILES['imagem'],['name']);
+        move_uploaded_file($_FILES['imagem']['tmp_name'],$servico->getImagemDiretorio());
+    };
+
     $servicoRepositorio->atualizar($servico);
     header("Location: servicosAdmin");
     }

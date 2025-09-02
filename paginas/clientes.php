@@ -1,7 +1,7 @@
 <?php
 
   $clienteRepositorio = new ClienteRepositorio($pdo);
-  $dadosClientes = $clienteRepositorio->opcoesClientes();
+  $dadosClientes = $clienteRepositorio->listar();
 
 ?>
 
@@ -16,6 +16,7 @@
             <br>
             <h5 class='card-title'><?= $cliente->getId()?></h5>
             <p class='card-text'><?= $cliente->getNome()?></p>
+            <p class='card-text'><?= $cliente->getTelefone()?></p>
             <p class='card-text'><?= $cliente->getEmail()?></p>
             <p class='card-text'><?= $cliente->getSenha()?></p>
           </div>
