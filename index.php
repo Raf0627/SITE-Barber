@@ -8,6 +8,9 @@ $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
   require "./src/Modelo/Servico.php";
   require "./src/Repositorio/ServicoRepositorio.php";
 
+  
+session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -63,16 +66,32 @@ $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="contato" title="contato"><i class="fa-solid fa-phone"></i>Contato</a>
             </li>
-            </li>
             <hr>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="admin" title="admin"><i class="fa-solid fa-phone"></i>Admin</a>
             </li>
+            <hr>
+            <?php
+              if(isset($_SESSION['id']))
+              {
+            ?>
+                <li><a href=""><?php echo $_SESSION['nome']; ?></a></li>
+                <li><a href="logoutIncludes">Logout</a></li>
+            <?php
+              }
+              else {
+            ?>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cadastro" title="cadastro"><i class="fa-solid fa-phone"></i>Cadastrar</a>
+            </li>
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="login" title="login"><i class="fa-solid fa-phone"></i>login</a>
+              <a class="nav-link active" aria-current="page" href="login" title="login"><i class="fa-solid fa-phone"></i>Login</a>
             </li>
+            <?php
+              }
+            ?>
           </ul>
         </div>
       </div>
@@ -97,8 +116,6 @@ $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
 
     if (file_exists($pagina))
       include $pagina;
-    else
-      include "paginas/erro.php";
     ?>
   </main>
 
