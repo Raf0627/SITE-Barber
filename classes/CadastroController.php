@@ -34,7 +34,7 @@ class CadastroController extends Cadastro
     }
 
     private function mesmaSenha() {
-        $result;
+        $result=false;
         if ($this->senha !== $this->senhaRpt) {
             $result = false;
         }
@@ -45,7 +45,7 @@ class CadastroController extends Cadastro
     }
 
     private function emailCadastrado() {
-        $result;
+        $result = false;
         if (!$this->checkEmail($this->email)) {
             $result = false;
         }

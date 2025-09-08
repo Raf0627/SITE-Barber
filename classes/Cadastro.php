@@ -14,7 +14,7 @@ class Cadastro {
 
     $hashedSenha = password_hash($senha,PASSWORD_DEFAULT);
 
-        if(!$statement->execute(array($nome,$hashedSenha,$email))) {
+        if(!$statement->execute(array($nome,$telefone,$hashedSenha,$email))) {
             $statement= null;
             echo "<p>E-mail já cadastrado em outro usuário<p/>";
             exit();
@@ -31,7 +31,7 @@ class Cadastro {
             exit();
         }
 
-        $resultCheck;
+        $resultCheck = false;
         if ($statement->rowCount() > 0) {
             $resultCheck = false;
         }
