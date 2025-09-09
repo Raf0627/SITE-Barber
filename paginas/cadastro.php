@@ -17,3 +17,23 @@
     <br>
     <a href="login"></a>
 </main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form[data-parsley-validate]');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                if (!$(form).parsley().isValid()) {
+                    e.preventDefault();
+                    Swal.fire({
+                        text: 'Preencha todos os campos corretamente!',
+                        icon: 'error',
+                        customClass: {
+                            confirmButton: 'btn-agendar'
+                        }
+                    });
+                }
+            });
+        }
+    });
+</script>

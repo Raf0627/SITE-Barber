@@ -14,7 +14,7 @@ class Cadastro {
 
     $hashedSenha = password_hash($senha,PASSWORD_DEFAULT);
 
-        if(!$statement->execute(array($nome,$telefone,$hashedSenha,$email))) {
+        if(!$statement->execute(array($nome,$telefone,$email,$hashedSenha))) {
             $statement= null;
             echo "<p>E-mail já cadastrado em outro usuário<p/>";
             exit();
