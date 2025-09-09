@@ -19,11 +19,6 @@ class CadastroController extends Cadastro
     }
 
     public function cadastrarUser() {
-        if($this->mesmaSenha() == false) {
-            
-            echo "<p>Senhas diferentes<p/>";
-            exit();
-        }
         if($this->emailCadastrado() == false) {
             
             echo "<p>E-mail já cadastrado em outro usuário<p/>";
@@ -31,17 +26,6 @@ class CadastroController extends Cadastro
         }
 
         $this->setUser($this->nome,$this->telefone,$this->email,$this->senha);
-    }
-
-    private function mesmaSenha() {
-        $result=false;
-        if ($this->senha !== $this->senhaRpt) {
-            $result = false;
-        }
-        else {
-            $result = true;
-        }
-        return $result;
     }
 
     private function emailCadastrado() {
