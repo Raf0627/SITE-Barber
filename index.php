@@ -2,6 +2,12 @@
 
 $base = "http://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
 
+// Carrega o autoloader do Composer
+require_once __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
   require "./src/conexao-db.php";
   require "./src/Modelo/Cliente.php";
   require "./src/Repositorio/ClienteRepositorio.php";
@@ -68,7 +74,7 @@ session_start();
             </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="admin" title="admin"><i class="fa-solid fa-phone"></i>Admin</a>
+              <a class="nav-link active" aria-current="page" href="dashboard" title="dashboard"><i class="fa-solid fa-phone"></i>Dashboard</a>
             </li>
             <hr>
             <?php
@@ -81,13 +87,9 @@ session_start();
               }
               else {
             ?>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="cadastro" title="cadastro"><i class="fa-solid fa-phone"></i>Cadastrar</a>
-            </li>
-            </li>
             <hr>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="login" title="login"><i class="fa-solid fa-phone"></i>Login</a>
+              <a class="nav-link active" aria-current="page" href="conta" title="conta"><i class="fa-solid fa-phone"></i>Conta</a>
             </li>
             <?php
               }

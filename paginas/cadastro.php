@@ -5,7 +5,7 @@
 
     <section class="container-form">
         <form method="post" action="cadastroIncludes" data-parsley-validate autocomplete="off">
-            <input type="text" name="nome" placeholder="Nome" required data-parsley-required-message="Digite um nome!">
+            <input type="text" name="nome" placeholder="Nome" required data-parsley-required-message="Digite um nome!" maxlength="18">
             <input id="tel" type="text" name="telefone" placeholder="Telefone" required data-parsley-required-message="Digite um número de telefone!" data-parsley-minlength="10" data-parsley-minlength-message="Digite um número de telefone válido!">
             <input type="email" name="email" placeholder="E-mail" required data-parsley-required-message="Digite um e-mail!" data-parsley-type-message="Digite um e-mail válido!">
             <input id="senha" type="password" name="senha" placeholder="Senha" required data-parsley-required-message="Digite uma senha!" data-parsley-minlength="6" data-parsley-minlength-message="A senha deve ter no mínimo 6 caracteres">
