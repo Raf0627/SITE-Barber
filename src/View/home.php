@@ -1,4 +1,6 @@
 <main class="main-home">
+
+<a href="contato.php">galeria</a>
     
     <div class="titulo titulo-home" data-aos="zoom-in">
         <h1>Bem-vindo ao meu site!</h1>

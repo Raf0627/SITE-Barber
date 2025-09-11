@@ -1,5 +1,17 @@
 {
-    "require": {
-        "vlucas/phpdotenv": "^5.6"
-    }
+    "name": "rafae/sam-barber",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raf0627",
+            "email": "rafaelfrossard076@gmail.com"
+        }
+    ],
+    "require": {}
 }

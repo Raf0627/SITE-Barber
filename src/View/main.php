@@ -5,10 +5,6 @@
 // Carrega o autoloader do Composer
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
-$dotenv->load();
-
-
 session_start();
 
 ?>
@@ -100,7 +96,7 @@ session_start();
   </div>
   <div class="gradiente"></div>
   <main>
-    <?php include __DIR__ . "/{$page}" ?>
+    <?php include __DIR__ . "/{$page}";?>
   </main>
 
   <footer>
